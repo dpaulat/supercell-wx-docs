@@ -30,4 +30,6 @@ html_theme_options = {
     'collapse_navigation': False
 }
 
+html_logo = 'images/scwx-200.png'
+
 html_static_path = ['_static']
