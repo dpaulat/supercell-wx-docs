@@ -11,6 +11,9 @@ Once downloaded, unzip the application to its own folder, and launch
 supercell-wx.exe from the bin folder. No installation is required, and all
 dependencies are self-contained.
 
+.. note:: Installation of the Microsoft Visual C++ Redistributable may be
+          required, provided in the bin folder (vc_redist.x64.exe).
+
 Configuration
 -------------
 
@@ -68,7 +71,7 @@ Additional color tables can be found at a number of sites, including:
 - https://www.wxtools.org/
 
 In addition to color tables, alert colors can also be modified. Use the text box
-to specify a color in ARGB hexidecimal format (#aarrggbb), or use the color
+to specify a color in ARGB hexadecimal format (#aarrggbb), or use the color
 picker to select a color.
 
 .. image:: images/initial-setup-05-settings-alerts-small.png
