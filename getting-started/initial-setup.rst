@@ -54,12 +54,16 @@ Using the menu, navigate to the Settings window using **File > Settings**.
 
 .. image:: images/initial-setup-02-initial-settings-small.png
 
-Here, a Mapbox API key must be configured. An account can be created at
-https://www.mapbox.com/. After reviewing terms of service, create an API key (or
-public token) with default scopes.
+Here, a map API key must be configured, using either `MapTiler
+<https://www.maptiler.com/>`_ or `Mapbox <https://www.mapbox.com/>`_ (specify
+the desired map provider). After creating an account and reviewing terms of
+service, create an API key (or public token) with default scopes (unless one is
+created for you).
 
-.. note:: Future releases will add alternative map sources, as well as a basic
-          map when no map source is configured.
+.. note:: Both MapTiler and Mapbox offer free tiers. At the time of writing,
+          Mapbox requires a credit card for sign-up, while MapTiler does not.
+
+.. note:: Future releases will add a basic map when no map source is configured.
 
 Additional options can be configured in the Settings dialog as desired. Once
 complete, press **OK** and restart the application.
