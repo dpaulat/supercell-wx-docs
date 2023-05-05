@@ -7,12 +7,40 @@ Installation
 Supercell Wx can be downloaded from GitHub. Download the latest release from
 https://github.com/dpaulat/supercell-wx/releases.
 
+Windows Setup
+^^^^^^^^^^^^^
+
+*Minimum requirements: Windows 10 (1809 or later), Windows 11*
+
 Once downloaded, unzip the application to its own folder, and launch
 supercell-wx.exe from the bin folder. No installation is required, and all
 dependencies are self-contained.
 
 .. note:: Installation of the Microsoft Visual C++ Redistributable may be
           required, provided in the bin folder (vc_redist.x64.exe).
+
+Linux Setup
+^^^^^^^^^^^
+
+*Minimum requirements: Linux/X11 with support for GCC 11 and OpenGL (e.g.,
+Fedora 34+, Ubuntu 22.04+)*
+
+Supercell Wx uses Qt for its interface. The Qt libraries that Supercell Wx
+depend on are included in each release, but the Qt libraries may have
+`additional dependencies <https://doc.qt.io/qt-6/linux-requirements.html>`_
+that require manual installation.
+
+In Fedora and Ubuntu, in addition to standard X11/XCB libraries, xcb-cursor must
+be installed:
+
+.. code:: bash
+
+  > dnf install xcb-util-cursor # e.g., Fedora
+  > apt install libxcb-cursor0  # e.g., Ubuntu
+
+Once downloaded, unzip the application to its own folder, give supercell-wx from
+the bin folder execute permissions (``chmod u+x supercell-wx``), and launch
+supercell-wx.
 
 Configuration
 -------------
