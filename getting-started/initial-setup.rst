@@ -23,7 +23,7 @@ Linux Setup
 ^^^^^^^^^^^
 
 *Minimum requirements: Linux/X11 with support for GCC 11 and OpenGL (e.g.,
-Fedora 34+, Ubuntu 22.04+)*
+Fedora 34+, Ubuntu 22.04+, EndeavourOS, openSUSE Tumbleweed)*
 
 Supercell Wx uses Qt for its interface. The Qt libraries that Supercell Wx
 depend on are included in each release, but the Qt libraries may have
@@ -31,16 +31,16 @@ depend on are included in each release, but the Qt libraries may have
 that require manual installation.
 
 In Fedora and Ubuntu, in addition to standard X11/XCB libraries, xcb-cursor must
-be installed:
+be installed. In openSUSE, a certificate workaround must be installed.
 
 .. code:: bash
 
-  > dnf install xcb-util-cursor # e.g., Fedora
-  > apt install libxcb-cursor0  # e.g., Ubuntu
+  > dnf install xcb-util-cursor                # e.g., Fedora
+  > apt install libxcb-cursor0                 # e.g., Ubuntu
+  > zypper install ca-certificates-steamtricks # e.g., openSUSE
 
-Once downloaded, unzip the application to its own folder, give supercell-wx from
-the bin folder execute permissions (``chmod u+x supercell-wx``), and launch
-supercell-wx.
+Once downloaded, untar the application to its own folder, and launch
+supercell-wx from the bin folder.
 
 Configuration
 -------------
