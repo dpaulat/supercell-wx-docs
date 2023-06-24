@@ -130,9 +130,15 @@ Animation Controls
 
 ``Loop Time``
 
+.. image:: images/radar-toolbox-05-timeline-looptime.png
+
 ``Loop Speed``
 
+.. image:: images/radar-toolbox-05-timeline-loopspeed.png
+
 ``Loop Delay``
+
+.. image:: images/radar-toolbox-05-timeline-loopdelay.png
 
 .. |anim-begin| image:: ../images/font-awesome-6/backward-step-solid.svg
    :height: 12px
