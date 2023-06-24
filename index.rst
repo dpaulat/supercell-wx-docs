@@ -24,6 +24,7 @@ for details.
    :name: sec-user-guide
 
    user-guide/radar-toolbox
+   user-guide/settings
 
 .. toctree::
    :maxdepth: 1
