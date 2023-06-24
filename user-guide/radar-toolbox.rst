@@ -96,7 +96,7 @@ The Elevation Selection setting allows the user to specify a particular elevatio
 
 .. image:: images/radar-toolbox-03-level2-product-elevation.png
 
-For more information about elevations, visit https://www.noaa.gov/jetstream/vcp_max
+[For more information about elevations, visit the link in VCP above](user-guide/radar-toolbox.html#vcp)
 
 Level 3
 ^^^^^^^
