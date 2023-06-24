@@ -61,6 +61,12 @@ Level 2
 
 .. image:: images/radar-toolbox-02-level2-products.png
 
+Reflectivity (REF) radar data refers to a specific type of weather radar information that provides detailed measurements of the intensity of reflected radar signals from precipitation targets, such as raindrops or snowflakes. This is commonly used to visualize the intensity of precipitation.
+.. image:: images/l2buttons/radar-toolbox-02-level2-ref.png
+
+Velocity (VEL) radar data is a type of weather radar information that provides measurements related to the motion of precipitation targets. It specifically focuses on the velocity or speed at which the precipitation targets are moving towards or away from the radar system. This is commonly used to identify areas of rotation, wind patterns, and the presence of severe weather phenomena like tornadoes or strong winds and derechos.
+.. image:: images/l2buttons/radar-toolbox-02-level2-vel.png
+
 Level 2 Product Settings
 """"""""""""""""""""""""
 
