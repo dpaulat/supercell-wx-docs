@@ -92,7 +92,11 @@ Clutter Filter Power Removed (CFP) quantifies the amount of power or signal that
 Level 2 Product Settings
 """"""""""""""""""""""""
 
+The Elevation Selection setting allows the user to specify a particular elevation angle of interest for data retrieval or display. Elevation angles are measured in degrees and represent the vertical tilt of the radar beam relative to the horizontal plane. Different elevation angles provide information about different layers of the atmosphere.
+
 .. image:: images/radar-toolbox-03-level2-product-elevation.png
+
+For more information about elevations, visit https://www.noaa.gov/jetstream/vcp_max
 
 Level 3
 ^^^^^^^
@@ -111,7 +115,11 @@ Timeline
 Auto Update
 ^^^^^^^^^^^
 
-The Auto Update feature provides information about the status of your radar data, indicating whether you are currently receiving the most recent updates or if the feature has been disabled. Auto Update is active in two scenarios: when the animation is playing in Live View or when you access the latest scan using the end button (By default, you are always viewing the latest scan).
+The Auto Update status provides information about the status of your radar data, indicating whether you are currently receiving the most recent updates or if the feature has been disabled. Auto Update is active in two scenarios: when the animation is playing in Live View or when you access the latest scan using the end button (By default, you are always viewing the latest scan).
+
+.. image:: images/radar-toolbox-05-timeline-updateenabled.png
+
+.. image:: images/radar-toolbox-05-timeline-updatedisabled.png
 
 Live View
 ^^^^^^^^^
@@ -123,7 +131,7 @@ Archive View
 
 With Archive View, you have the ability to access historical radar data. 
 
-.. note::  Older Level 2 formats, circa 2008, are not currently supported.
+.. note::  Older Level 2 formats, circa 2008 and prior, are not currently supported.
 
 Animation Controls
 ^^^^^^^^^^^^^^^^^^
