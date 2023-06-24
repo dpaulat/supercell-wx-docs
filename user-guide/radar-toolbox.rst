@@ -79,11 +79,19 @@ Timeline
 Auto Update
 ^^^^^^^^^^^
 
+The Auto Update feature provides information about the status of your radar data, indicating whether you are currently receiving the most recent updates or if the feature has been disabled. Auto Update is active in two scenarios: when the animation is playing in Live View or when you access the latest scan using the end button (By default, you are always viewing the latest scan).
+
 Live View
 ^^^^^^^^^
 
+Live View enables you to observe real-time updates from the radar site you have selected, ensuring you stay up to date with the latest information.
+
 Archive View
 ^^^^^^^^^^^^
+
+With Archive View, you have the ability to access historical radar data, spanning as far back as 1991. 
+
+.. note::  Super Resolution data may not always be available for dates in the past.
 
 Animation Controls
 ^^^^^^^^^^^^^^^^^^
