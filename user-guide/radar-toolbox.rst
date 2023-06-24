@@ -101,7 +101,7 @@ Level 3
 
 .. image:: images/l3buttons/radar-toolbox-04-level3-tilt.png
 
-.. image:: images/l3buttons/radar-toolbox-04-level3-datasel
+.. image:: images/l3buttons/radar-toolbox-04-level3-datasel.png
 
 Timeline
 --------
