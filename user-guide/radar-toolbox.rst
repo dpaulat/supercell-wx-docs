@@ -89,9 +89,9 @@ Live View enables you to observe real-time updates from the radar site you have 
 Archive View
 ^^^^^^^^^^^^
 
-With Archive View, you have the ability to access historical radar data, spanning as far back as 1991. 
+With Archive View, you have the ability to access historical radar data. 
 
-.. note::  Super Resolution data may not always be available for dates in the past.
+.. note::  Older Level 2 formats, circa 2008, are not currently supported.
 
 Animation Controls
 ^^^^^^^^^^^^^^^^^^
