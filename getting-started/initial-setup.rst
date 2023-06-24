@@ -82,8 +82,8 @@ Supercell Wx uses `MapLibre GL Native
 <https://github.com/maplibre/maplibre-gl-native>`_ to render a responsive map.
 To pan the map, click and drag the mouse. Use the mouse wheel to zoom, or double
 click using the left or right mouse button to zoom in or out respectively.
-Pressing ``s`` will cycle through map styles, including light, dark and
-satellite underlays.
+Pressing ``s`` or both left and right mouse buttons will cycle through map
+styles, including light, dark and satellite underlays.
 
 Customization
 -------------
