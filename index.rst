@@ -19,11 +19,12 @@ for details.
    getting-started/initial-setup
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: User Guide
    :name: sec-user-guide
 
    user-guide/radar-toolbox
+   user-guide/settings
 
 .. toctree::
    :maxdepth: 1

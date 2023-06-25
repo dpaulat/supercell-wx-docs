@@ -61,24 +61,87 @@ Level 2
 
 .. image:: images/radar-toolbox-02-level2-products.png
 
-Reflectivity (REF) radar data provides detailed measurements of the intensity of reflected radar signals from precipitation targets, such as raindrops or snowflakes. This is commonly used to visualize the intensity of precipitation.
-.. image:: images/l2buttons/radar-toolbox-02-level2-ref.png
-
-Velocity (VEL) radar data provides measurements related to the motion of precipitation targets. It specifically focuses on the velocity or speed at which the precipitation targets are moving towards or away from the radar system. This is commonly used to identify areas of rotation, wind patterns, and the presence of severe weather phenomena like tornadoes or strong winds and derechos.
-.. image:: images/l2buttons/radar-toolbox-02-level2-vel.png
-
-Spectrum Width (SW) radar data represents the variation or dispersion in the Doppler velocities of precipitation targets within a radar beam. High values of spectrum width generally suggest the presence of turbulent atmospheric conditions, such as strong updrafts and downdrafts.
-.. image:: images/l2buttons/radar-toolbox-02-level2-sw.png
-
-Level 2 Product Settings
+Reflectivity
 """"""""""""""""""""""""
+
+.. image:: images/radar-toolbox-02-level2-ref.png
+
+Level 2 Reflectivity (REF) is raw radar data provides measurements of the intensity of reflected radar signals from precipitation targets, such as raindrops or snowflakes. This is commonly used to visualize the intensity of precipitation. Also note that this data is generally used for a more in-depth examination in comparison to Level 3 data.
+
+Velocity
+""""""""""""""""""""""""
+
+.. image:: images/radar-toolbox-02-level2-vel.png
+
+Level 2 Velocity (VEL) is raw radar data provides measurements related to the motion of precipitation targets. It specifically focuses on the velocity or speed at which the precipitation targets are moving towards or away from the radar system. This is commonly used to identify areas of rotation, wind patterns, and the presence of severe weather phenomena like tornadoes or strong winds and derechos.
+
+Spectrum Width
+""""""""""""""""""""""""
+
+.. image:: images/radar-toolbox-02-level2-sw.png
+
+Level 2 Spectrum Width (SW) is raw radar data represents the variation or dispersion in the Doppler velocities of precipitation targets within a radar beam. High values of spectrum width generally suggest the presence of turbulent atmospheric conditions, such as strong updrafts and downdrafts.
+
+Differential Reflectivity
+""""""""""""""""""""""""
+
+.. image:: images/radar-toolbox-02-level2-zdr.png
+
+Level 2 Differential Reflectivity (ZDR) is raw radar data that measures the differences in the intensity of the returned radar signals between horizontal and vertical polarizations. It provides information about the shape and characteristics of the precipitation targets, such as raindrops, snowflakes, or hail. Positive values of ZDR indicate oblong or horizontally elongated targets, like raindrops or melting snowflakes, while negative values suggest spherical or vertically elongated targets, like hail or ice crystals. 
+
+Differential Phase
+""""""""""""""""""""""""
+
+.. image:: images/radar-toolbox-02-level2-phi.png
+
+Level 2 Differential Phase (PHI) is a raw product that measures the phase difference between the horizontally and vertically polarized radar signals. PHI helps in identifying phenomena like melting layers, supercooled liquid droplets, and distinguishing between different types of precipitation particles.
+
+Correlation Coefficient
+""""""""""""""""""""""""
+
+.. image:: images/radar-toolbox-02-level2-rho.png
+
+Level 2 Correlation Coefficient (RHO) is raw radar data that measures the similarity or correlation between the horizontally and vertically polarized radar signals. When RHO values are high, objects within the atmosphere have a stronger correlation, they are similar in size like raindrops. When the RHO values drop, different objects differ in size, and is likely indicative of debris. This helps in identifying if there's debris from strong areas of rotation indicated from VEL data.
+
+Clutter Filter Power Removed
+""""""""""""""""""""""""
+
+.. image:: images/radar-toolbox-02-level2-cfp.png
+
+Level 2 Clutter Filter Power Removed (CFP) is raw radar data that quantifies the amount of power or signal that has been removed by the clutter filtering algorithm. Clutter refers to unwanted radar echoes caused by non-meteorological objects such as buildings, trees, or ground features. The clutter filtering algorithm is designed to reduce the impact of these unwanted signals, allowing for a clearer representation of the meteorological targets, such as precipitation. A higher CFP value indicates a higher amount of clutter power successfully eliminated by the clutter filtering process.
+
+Product Settings
+""""""""""""""""""""""""
+
+The Elevation Selection setting allows the user to specify a particular elevation angle of interest for data retrieval or display. Elevation angles are measured in degrees and represent the vertical tilt of the radar beam relative to the horizontal plane. Different elevation angles provide information about different layers of the atmosphere.
 
 .. image:: images/radar-toolbox-03-level2-product-elevation.png
 
+For more information about elevation, visit https://www.noaa.gov/jetstream/vcp_max.
+
 Level 3
-^^^^^^^
+^^^^^^^^^
 
 .. image:: images/radar-toolbox-04-level3-products.png
+
+Reflectivity
+""""""""""""""""""""""""
+
+.. image:: images/radar-toolbox-04-level3-ref.png
+
+Level 3 Reflectivity (REF) is processed radar data that has been aggregated and averaged over larger spatial areas and time periods. You can view Level 3 Reflectivity as Super-Resolution Data or as the standard Digital Reflectivity data. This is commonly used to visualize the intensity of precipitation, and is used more-so for weather monitoring purposes.
+
+REF Selection:
+
+.. image:: images/radar-toolbox-04-level3-dataselref.png
+
+VEL Selection:
+
+.. image:: images/radar-toolbox-04-level3-dataselvel.png
+
+Tilt Selection:
+
+.. image:: images/radar-toolbox-04-level3-tilt.png
 
 Timeline
 --------
@@ -88,7 +151,15 @@ Timeline
 Auto Update
 ^^^^^^^^^^^
 
-The Auto Update feature provides information about the status of your radar data, indicating whether you are currently receiving the most recent updates or if the feature has been disabled. Auto Update is active in two scenarios: when the animation is playing in Live View or when you access the latest scan using the end button (By default, you are always viewing the latest scan).
+The Auto Update status provides information about the status of your radar data, indicating whether you are currently receiving the most recent updates or if the feature has been disabled. Auto Update is active in two scenarios: when the animation is playing in Live View or when you access the latest scan using the end button (By default, you are always viewing the latest scan).
+
+Enabled:
+
+.. image:: images/radar-toolbox-05-timeline-updateenabled.png
+
+Disabled:
+
+.. image:: images/radar-toolbox-05-timeline-updatedisabled.png
 
 Live View
 ^^^^^^^^^
@@ -100,16 +171,22 @@ Archive View
 
 With Archive View, you have the ability to access historical radar data. 
 
-.. note::  Older Level 2 formats, circa 2008, are not currently supported.
+.. note::  Older Level 2 formats, circa 2008 and prior, are not currently supported.
 
 Animation Controls
 ^^^^^^^^^^^^^^^^^^
 
 ``Loop Time``
 
+.. image:: images/radar-toolbox-05-timeline-looptime.png
+
 ``Loop Speed``
 
+.. image:: images/radar-toolbox-05-timeline-loopspeed.png
+
 ``Loop Delay``
+
+.. image:: images/radar-toolbox-05-timeline-loopdelay.png
 
 .. |anim-begin| image:: ../images/font-awesome-6/backward-step-solid.svg
    :height: 12px
