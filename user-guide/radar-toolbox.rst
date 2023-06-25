@@ -57,37 +57,58 @@ Radar Products
 --------------
 
 Level 2
-^^^^^^^
+^^^^^^^^^
 
 .. image:: images/radar-toolbox-02-level2-products.png
 
-Level 2 Reflectivity (REF) is raw radar data provides measurements of the intensity of reflected radar signals from precipitation targets, such as raindrops or snowflakes. This is commonly used to visualize the intensity of precipitation. Also note that this data is generally used for a more in-depth examination in comparison to Level 3 data.
+Reflectivity
+^^^^^^^
 
 .. image:: images/radar-toolbox-02-level2-ref.png
 
-Level 2 Velocity (VEL) is raw radar data provides measurements related to the motion of precipitation targets. It specifically focuses on the velocity or speed at which the precipitation targets are moving towards or away from the radar system. This is commonly used to identify areas of rotation, wind patterns, and the presence of severe weather phenomena like tornadoes or strong winds and derechos.
+Level 2 Reflectivity (REF) is raw radar data provides measurements of the intensity of reflected radar signals from precipitation targets, such as raindrops or snowflakes. This is commonly used to visualize the intensity of precipitation. Also note that this data is generally used for a more in-depth examination in comparison to Level 3 data.
+
+Velocity
+^^^^^^^
 
 .. image:: images/radar-toolbox-02-level2-vel.png
 
-Level 2 Spectrum Width (SW) is raw radar data represents the variation or dispersion in the Doppler velocities of precipitation targets within a radar beam. High values of spectrum width generally suggest the presence of turbulent atmospheric conditions, such as strong updrafts and downdrafts.
+Level 2 Velocity (VEL) is raw radar data provides measurements related to the motion of precipitation targets. It specifically focuses on the velocity or speed at which the precipitation targets are moving towards or away from the radar system. This is commonly used to identify areas of rotation, wind patterns, and the presence of severe weather phenomena like tornadoes or strong winds and derechos.
+
+Spectrum Width
+^^^^^^^
 
 .. image:: images/radar-toolbox-02-level2-sw.png
 
-Level 2 Differential Reflectivity (ZDR) is raw radar data that measures the differences in the intensity of the returned radar signals between horizontal and vertical polarizations. It provides information about the shape and characteristics of the precipitation targets, such as raindrops, snowflakes, or hail. Positive values of ZDR indicate oblong or horizontally elongated targets, like raindrops or melting snowflakes, while negative values suggest spherical or vertically elongated targets, like hail or ice crystals. 
+Level 2 Spectrum Width (SW) is raw radar data represents the variation or dispersion in the Doppler velocities of precipitation targets within a radar beam. High values of spectrum width generally suggest the presence of turbulent atmospheric conditions, such as strong updrafts and downdrafts.
+
+Differential Reflectivity
+^^^^^^^
 
 .. image:: images/radar-toolbox-02-level2-zdr.png
 
-Level 2 Differential Phase (PHI) is a raw product that measures the phase difference between the horizontally and vertically polarized radar signals. PHI helps in identifying phenomena like melting layers, supercooled liquid droplets, and distinguishing between different types of precipitation particles.
+Level 2 Differential Reflectivity (ZDR) is raw radar data that measures the differences in the intensity of the returned radar signals between horizontal and vertical polarizations. It provides information about the shape and characteristics of the precipitation targets, such as raindrops, snowflakes, or hail. Positive values of ZDR indicate oblong or horizontally elongated targets, like raindrops or melting snowflakes, while negative values suggest spherical or vertically elongated targets, like hail or ice crystals. 
+
+Differential Phase
+^^^^^^^
 
 .. image:: images/radar-toolbox-02-level2-phi.png
 
-Level 2 Correlation Coefficient (RHO) is raw radar data that measures the similarity or correlation between the horizontally and vertically polarized radar signals. When RHO values are high, objects within the atmosphere have a stronger correlation, they are similar in size like raindrops. When the RHO values drop, different objects differ in size, and is likely indicative of debris. This helps in identifying if there's debris from strong areas of rotation indicated from VEL data.
+Level 2 Differential Phase (PHI) is a raw product that measures the phase difference between the horizontally and vertically polarized radar signals. PHI helps in identifying phenomena like melting layers, supercooled liquid droplets, and distinguishing between different types of precipitation particles.
+
+Correlation Coefficient
+^^^^^^^
 
 .. image:: images/radar-toolbox-02-level2-rho.png
 
-Level 2 Clutter Filter Power Removed (CFP) is raw radar data that quantifies the amount of power or signal that has been removed by the clutter filtering algorithm. Clutter refers to unwanted radar echoes caused by non-meteorological objects such as buildings, trees, or ground features. The clutter filtering algorithm is designed to reduce the impact of these unwanted signals, allowing for a clearer representation of the meteorological targets, such as precipitation. A higher CFP value indicates a higher amount of clutter power successfully eliminated by the clutter filtering process.
+Level 2 Correlation Coefficient (RHO) is raw radar data that measures the similarity or correlation between the horizontally and vertically polarized radar signals. When RHO values are high, objects within the atmosphere have a stronger correlation, they are similar in size like raindrops. When the RHO values drop, different objects differ in size, and is likely indicative of debris. This helps in identifying if there's debris from strong areas of rotation indicated from VEL data.
+
+Clutter Filter Power Removed
+^^^^^^^
 
 .. image:: images/radar-toolbox-02-level2-cfp.png
+
+Level 2 Clutter Filter Power Removed (CFP) is raw radar data that quantifies the amount of power or signal that has been removed by the clutter filtering algorithm. Clutter refers to unwanted radar echoes caused by non-meteorological objects such as buildings, trees, or ground features. The clutter filtering algorithm is designed to reduce the impact of these unwanted signals, allowing for a clearer representation of the meteorological targets, such as precipitation. A higher CFP value indicates a higher amount of clutter power successfully eliminated by the clutter filtering process.
 
 Level 2 Product Settings
 """"""""""""""""""""""""
@@ -99,17 +120,22 @@ The Elevation Selection setting allows the user to specify a particular elevatio
 [For more information about elevations, visit the link in VCP above](user-guide/radar-toolbox.html#vcp)
 
 Level 3
-^^^^^^^
+^^^^^^^^^
 
 .. image:: images/radar-toolbox-04-level3-products.png
+
+Reflectivity
+^^^^^^^ 
+
+.. image:: images/radar-toolbox-04-level3-ref.png
 
 Level 3 Reflectivity (REF) is processed radar data that has been aggregated and averaged over larger spatial areas and time periods. You can view Level 3 Reflectivity as Super-Resolution Data or as the standard Digital Reflectivity data. This is commonly used to visualize the intensity of precipitation, and is used more-so for weather monitoring purposes.
 
 .. image:: images/radar-toolbox-04-level3-dataselref.png
 
-.. image:: images/radar-toolbox-04-level3-tilt.png
-
 .. image:: images/radar-toolbox-04-level3-dataselvel.png
+
+.. image:: images/radar-toolbox-04-level3-tilt.png
 
 Timeline
 --------
