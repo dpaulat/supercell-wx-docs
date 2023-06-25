@@ -19,7 +19,7 @@ for details.
    getting-started/initial-setup
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: User Guide
    :name: sec-user-guide
 

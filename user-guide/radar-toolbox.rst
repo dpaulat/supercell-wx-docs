@@ -115,7 +115,7 @@ Level 2 Elevation
 
 .. image:: images/radar-toolbox-03-level2-product-elevation.png
 
-The elevation buttons allow the user to specify a particular elevation angle of interest for data retrieval or display. Elevation angles are measured in degrees and represent the vertical tilt of the radar beam relative to the horizontal plane. Different elevation angles provide information about different layers of the atmosphere.
+The elevation buttons allow the user to specify a particular elevation angle of interest for data retrieval or display. Elevation angles are measured in degrees and represent the vertical tilt of the radar beam relative to the horizontal plane. Different elevation angles provide information about different layers of the atmosphere. Each Level 2 product in Supercell Wx will give you this ability.
 
 For more information about elevation, visit https://www.noaa.gov/jetstream/vcp_max.
 
