@@ -94,7 +94,7 @@ Differential Phase
 
 .. image:: images/radar-toolbox-02-level2-phi.png
 
-Level 2 Differential Phase (PHI) is a raw product that measures the phase difference between the horizontally and vertically polarized radar signals. PHI helps in identifying phenomena like melting layers, supercooled liquid droplets, and distinguishing between different types of precipitation particles.
+Level 2 Differential Phase (PHI) is raw radar data that measures the phase difference between the horizontally and vertically polarized radar signals. PHI helps in identifying phenomena like melting layers, supercooled liquid droplets, and distinguishing between different types of precipitation particles.
 
 Correlation Coefficient
 """""""""""""""""""""""
