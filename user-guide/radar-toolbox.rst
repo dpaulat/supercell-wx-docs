@@ -66,21 +66,21 @@ Reflectivity
 
 .. image:: images/radar-toolbox-02-level2-ref.png
 
-Level 2 Reflectivity (REF) is raw radar data provides measurements of the intensity of reflected radar signals from precipitation targets, such as raindrops or snowflakes. This is commonly used to visualize the intensity of precipitation. Also note that this data is generally used for a more in-depth examination in comparison to Level 3 data.
+Level 2 Reflectivity (REF) is raw radar data that provides measurements of the intensity of reflected radar signals from precipitation targets, such as raindrops or snowflakes. This is commonly used to visualize the intensity of precipitation. Also note that this data is generally used for a more in-depth examination in comparison to Level 3 data.
 
 Velocity
 """"""""""""""""""""""""
 
 .. image:: images/radar-toolbox-02-level2-vel.png
 
-Level 2 Velocity (VEL) is raw radar data provides measurements related to the motion of precipitation targets. It specifically focuses on the velocity or speed at which the precipitation targets are moving towards or away from the radar system. This is commonly used to identify areas of rotation, wind patterns, and the presence of severe weather phenomena like tornadoes or strong winds and derechos.
+Level 2 Velocity (VEL) is raw radar data that provides measurements related to the motion of precipitation targets. It specifically focuses on the velocity or speed at which the precipitation targets are moving towards or away from the radar system. This is commonly used to identify areas of rotation, wind patterns, and the presence of severe weather phenomena like tornadoes or strong winds and derechos.
 
 Spectrum Width
 """"""""""""""""""""""""
 
 .. image:: images/radar-toolbox-02-level2-sw.png
 
-Level 2 Spectrum Width (SW) is raw radar data represents the variation or dispersion in the Doppler velocities of precipitation targets within a radar beam. High values of spectrum width generally suggest the presence of turbulent atmospheric conditions, such as strong updrafts and downdrafts.
+Level 2 Spectrum Width (SW) is raw radar data that represents the variation or dispersion in the Doppler velocities of precipitation targets within a radar beam. High values of spectrum width generally suggest the presence of turbulent atmospheric conditions, such as strong updrafts and downdrafts.
 
 Differential Reflectivity
 """"""""""""""""""""""""
