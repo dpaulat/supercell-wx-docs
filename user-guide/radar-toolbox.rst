@@ -110,12 +110,12 @@ Clutter Filter Power Removed
 
 Level 2 Clutter Filter Power Removed (CFP) is raw radar data that quantifies the amount of power or signal that has been removed by the clutter filtering algorithm. Clutter refers to unwanted radar echoes caused by non-meteorological objects such as buildings, trees, or ground features. The clutter filtering algorithm is designed to reduce the impact of these unwanted signals, allowing for a clearer representation of the meteorological targets, such as precipitation. A higher CFP value indicates a higher amount of clutter power successfully eliminated by the clutter filtering process.
 
-Product Settings
-""""""""""""""""
-
-The Elevation Selection setting allows the user to specify a particular elevation angle of interest for data retrieval or display. Elevation angles are measured in degrees and represent the vertical tilt of the radar beam relative to the horizontal plane. Different elevation angles provide information about different layers of the atmosphere.
+Level 2 Elevation
+"""""""""""""""""
 
 .. image:: images/radar-toolbox-03-level2-product-elevation.png
+
+The elevation buttons allow the user to specify a particular elevation angle of interest for data retrieval or display. Elevation angles are measured in degrees and represent the vertical tilt of the radar beam relative to the horizontal plane. Different elevation angles provide information about different layers of the atmosphere.
 
 For more information about elevation, visit https://www.noaa.gov/jetstream/vcp_max.
 
@@ -129,15 +129,23 @@ Reflectivity
 
 .. image:: images/radar-toolbox-04-level3-ref.png
 
-Level 3 Reflectivity (REF) is processed radar data that has been aggregated and averaged over larger spatial areas and time periods. You can view Level 3 Reflectivity as Super-Resolution Data or as the standard Digital Reflectivity data. This is commonly used to visualize the intensity of precipitation, and is used more-so for weather monitoring purposes.
-
-REF Selection:
+Reflectivity Data Selection:
 
 .. image:: images/radar-toolbox-04-level3-dataselref.png
 
-VEL Selection:
+
+Level 3 Reflectivity (REF) is processed radar data that has been aggregated and averaged over larger spatial areas and time periods. This is commonly used to visualize the intensity of precipitation, and is used more-so for weather monitoring purposes. You can view Level 3 Reflectivity as Super-Resolution Data or as the standard Digital Reflectivity data.
+
+Velocity
+""""""""""""
+
+.. image:: images/radar-toolbox-04-level3-vel.png
+
+Velocity Data Selection:
 
 .. image:: images/radar-toolbox-04-level3-dataselvel.png
+
+Level 3 Velocity (VEL) is radar data that aggregates and averages the velocity measurements obtained from Level 2 radar data over larger areas and time periods to create a simplified representation of motion patterns. You can view Level 3 Velocity as Super-Resolution Data or as the standard Digital Velocity data.
 
 Tilt Selection:
 
