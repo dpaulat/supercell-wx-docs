@@ -105,7 +105,9 @@ Level 3
 
 .. image:: images/radar-toolbox-04-level3-tilt.png
 
-.. image:: images/radar-toolbox-04-level3-datasel.png
+.. image:: images/radar-toolbox-04-level3-dataselref.png
+
+.. image:: images/radar-toolbox-04-level3-dataselvel.png
 
 Timeline
 --------
