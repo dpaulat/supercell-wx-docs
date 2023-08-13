@@ -71,7 +71,7 @@ Changes what happens when selecting an alert in the Alerts panel.
 - Go (Default) - Switch to issuing radar site and pan map to location. 
 - View - Open Alert to view text issued from NWS.
 
-Update Notifications Enbaled
+Update Notifications Enabled
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Notify the user of updates to Supercell Wx.
