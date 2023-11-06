@@ -106,7 +106,7 @@ Under the text menu, the user is given several different customization options t
 
 .. image:: images/settings-text-01.png
 
-Choosing your font
+Choosing the font
 ^^^^^^^^^^^^^^^^^^
 
 The user can select the font they'd like to use by choosing either the default display item or the tooltip display item, and then hitting the 3 dots next to the font name.
