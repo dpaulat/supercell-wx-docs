@@ -51,7 +51,9 @@ The user may change the link to a placefile they have already added by double cl
 Placefile Resources
 ^^^^^^^^^^^^^^^^^^^
 
-When looking for placefiles to add, there are several options available to the user that are both free and paid. Here are several resources for placefiles that are available to the user. Please note that Supercell-Wx is not responsible for anything that happens with the suggestions below and that the user assumes all risk, however Supercell-Wx will give support when it comes to incompatibility, within reason.
+When looking for placefiles to add, there are several options available to the user that are both free and paid. Here are several resources for placefiles that are available to the user. 
+
+.. note:: Supercell-Wx is not responsible for anything that happens with the placefile suggestions below and that the user assumes all risk, however Supercell-Wx will give support when it comes to incompatibility, within reason.
 
 Free:
 1. Supercell-Wx hosted: https://placefiles.supercellwx.net/
