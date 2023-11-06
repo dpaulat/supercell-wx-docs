@@ -2,7 +2,7 @@ Settings
 =============
 
 Settings can be accessed from the menu by selecting **File > Settings**. The settings menu
-contains two categories, General and Palettes. 
+contains three categories, General, Palettes and Text. 
 
 .. image:: images/settings-general-04-restore-defaults.png
 
