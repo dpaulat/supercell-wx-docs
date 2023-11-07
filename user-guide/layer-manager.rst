@@ -31,7 +31,7 @@ Just like the Placefile Manager, the user may filter the list of layers. The use
 .. image:: images/layer-manager-04-filter.png
 
 Reset
-^^^^^^
+^^^^^
 
 If the users wishes, they can reset all the layers by pressing the Reset button found on the bottom right of the Layer Manager.
 
