@@ -42,28 +42,43 @@ be installed. In openSUSE, a certificate workaround must be installed.
 Once downloaded, untar the application to its own folder, and launch
 supercell-wx from the bin folder.
 
+Setup Wizard
+------------
+
+The first time the application is launched, a setup wizard will appear. Follow
+the instructions displayed on the screen to configure the application for first
+use.
+
+The Map Provider page displays first. Here, a map API key must be configured,
+using either `MapTiler <https://www.maptiler.com/>`_ or `Mapbox
+<https://www.mapbox.com/>`_ (specify the desired map provider). After creating
+an account and reviewing terms of service, create an API key (or public token)
+with default scopes (unless one is created for you).
+
+.. image:: images/initial-setup-06-wizard-map-provider.png
+
+.. note:: Both MapTiler and Mapbox offer free tiers. At the time of writing,
+          Mapbox requires a credit card for sign-up, while MapTiler does not.
+
+.. note:: Future releases will add a basic map when no map source is configured.
+
+Next, the Map Layout page displays. Here, the default display of a single map
+can be changed. The Map Layout can be configured as large as a 2x2 grid.
+
+.. image:: images/initial-setup-07-wizard-map-layout.png
+
 Configuration
 -------------
 
-The first time the application is launched, a black screen will appear in place
-of the map.
+If no map API key has been entered, a black screen will appear in place of the
+map. An API key can be reconfigured in settings, following the API key
+instructions above.
 
 .. image:: images/initial-setup-01-initial-startup-small.png
 
 Using the menu, navigate to the Settings window using **File > Settings**.
 
 .. image:: images/initial-setup-02-initial-settings-small.png
-
-Here, a map API key must be configured, using either `MapTiler
-<https://www.maptiler.com/>`_ or `Mapbox <https://www.mapbox.com/>`_ (specify
-the desired map provider). After creating an account and reviewing terms of
-service, create an API key (or public token) with default scopes (unless one is
-created for you).
-
-.. note:: Both MapTiler and Mapbox offer free tiers. At the time of writing,
-          Mapbox requires a credit card for sign-up, while MapTiler does not.
-
-.. note:: Future releases will add a basic map when no map source is configured.
 
 Additional options can be configured in the Settings dialog as desired. Once
 complete, press **OK** and restart the application.
