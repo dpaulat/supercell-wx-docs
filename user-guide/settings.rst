@@ -2,7 +2,7 @@ Settings
 =============
 
 Settings can be accessed from the menu by selecting **File > Settings**. The settings menu
-contains two categories, General and Palettes. 
+contains three categories, General, Palettes and Text. 
 
 .. image:: images/settings-general-04-restore-defaults.png
 
@@ -23,10 +23,6 @@ Default Radar Site
 ^^^^^^^^^^^^^^^^^^
 Choose which radar site will load automatically upon opening the app. The map will also
 be centered over the selected radar site.
-
-Font Sizes
-^^^^^^^^^^
-Change the size of the font on map overlays.
 
 Grid Width and Height
 ^^^^^^^^^^^^^^^^^^^^^
@@ -80,7 +76,6 @@ Debug Enabled
 ^^^^^^^^^^^^^
 Enables the debug options menu.
 
-
 Palettes
 ----------
 
@@ -103,3 +98,34 @@ to specify a color in ARGB hexadecimal format (#aarrggbb), or use the color
 picker to select a color.
 
 .. image:: images/settings-palette-02-alerts.png
+
+Text
+----------
+
+Under the text menu, the user is given several different customization options to adjust the font and style to the user's liking.
+
+.. image:: images/settings-text-01.png
+
+Choosing the font
+^^^^^^^^^^^^^^^^^^
+
+The user can select the font they'd like to use by choosing either the default display item or the tooltip display item, and then hitting the 3 dots next to the font name.
+
+.. image:: images/settings-text-02-select-font.png
+
+*Choose the font, font style, font size, effects and writing system*
+
+.. image:: images/settings-text-03-select-font.png
+
+Tooltip method
+^^^^^^^^^^^^^^
+
+The tooltip method allows the user to change the method used for which pop-ups are displayed. The user is also able to change the character wrap size if the text from placefiles appear to be too long on the user's screen.
+
+*Tooltip methods*
+
+.. image:: images/settings-text-04-tooltip-method.png
+
+*Character wrap and placefile text drop shadow*
+
+.. image:: images/settings-text-05-character-wrap.png
