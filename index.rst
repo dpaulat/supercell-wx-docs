@@ -23,6 +23,8 @@ for details.
    :caption: User Guide
    :name: sec-user-guide
 
+   user-guide/layer-manager
+   user-guide/placefile-manager
    user-guide/radar-toolbox
    user-guide/settings
 

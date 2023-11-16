@@ -42,8 +42,9 @@ Map Style
 ^^^^^^^^^
 
 The Map Style dropdown will display a list of the available map styles for the
-selected map provider (e.g., Mapbox or MapTiler). For details on the available
-map types, see the selected map provider's website:
+selected map provider (e.g., Mapbox or MapTiler). Selecting a style will update
+the active map. For details on the available map types, see the selected map
+provider's website:
 
 - Mapbox: https://www.mapbox.com/gallery/
 - MapTiler: https://cloud.maptiler.com/maps/ (requires login)
