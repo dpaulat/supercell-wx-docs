@@ -33,3 +33,4 @@ html_theme_options = {
 html_logo = 'images/scwx-200.png'
 
 html_static_path = ['_static']
+html_css_files = ['css/scwx.css']

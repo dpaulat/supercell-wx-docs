@@ -1,0 +1,14 @@
+td.scwx-supported
+{
+    background-color: #90ff90 !important;
+}
+
+td.scwx-unsupported
+{
+    background-color: #ff9090 !important;
+}
+
+td.scwx-partial-support
+{
+    background-color: #ffff90 !important;
+}
