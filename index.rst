@@ -42,4 +42,5 @@ for details.
 
    GitHub <https://github.com/dpaulat/supercell-wx>
    Roadmap <https://github.com/users/dpaulat/projects/2/views/2>
+   development/developer-setup
    development/faq
