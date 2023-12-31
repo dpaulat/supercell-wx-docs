@@ -171,6 +171,13 @@ will be use cases for deviation from the guidelines below.
 - If adding a dependency, prefer adding it to conanfile.py over adding a
   submodule, unless additional customization is necessary
 - Minimize custom development environment configuration
+- Update acknowledgements when appropriate
+
+  - Supercell Wx should remain MIT-licensed
+  - Dependencies must be compatible with the MIT license
+
+    - LGPL-licensed software must be contained within shared libraries
+    - GPL-licensed software must not be used
 
 Help
 ----
