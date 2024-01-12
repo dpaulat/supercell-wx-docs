@@ -370,7 +370,7 @@ Weather Service:
           <tr class="row-odd">
             <td><p>165</p></td>
             <td><p>Digital Hydrometeor Classification</p></td>
-            <td class="scwx-unsupported"><p>NXH<br/>NYH<br/>NZH<br/>N0H<br/>NAH<br/>N1H<br/>NBH<br/>N2H<br/>N3H</p></td>
+            <td class="scwx-supported"><p>NXH<br/>NYH<br/>NZH<br/>N0H<br/>NAH<br/>N1H<br/>NBH<br/>N2H<br/>N3H</p></td>
           </tr>
           <tr class="row-even">
             <td><p>166</p></td>
@@ -430,7 +430,7 @@ Weather Service:
           <tr class="row-odd">
             <td><p>177</p></td>
             <td><p>Hybrid Hydrometeor Classification</p></td>
-            <td class="scwx-unsupported"><p>HHC</p></td>
+            <td class="scwx-supported"><p>HHC</p></td>
           </tr>
           <tr class="row-even">
             <td><p>178</p></td>
