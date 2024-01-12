@@ -116,9 +116,10 @@ Using the default setup scripts, CMake will generate Visual Studio solution
 files for Windows, and Ninja build files for Linux. To change this behavior, add
 or modify the ``-G`` parameter with the appropriate CMake generator.
 
-If configuring manually instead of using a provided setup script, it is
-recommended to at least run ``tools/setup-common.{ext}``. This will ensure
-Python dependencies are setup properly, as well as your conan profile.
+If configuring manually instead of using a provided setup script (e.g., with
+Visual Studio Code on Windows), it is recommended to at least run
+``tools/setup-common.{ext}``. This will ensure Python dependencies are setup
+properly, as well as your conan profile.
 
 When configuring on Linux, you may encounter an error due to missing packages
 from your system. These may be installed manually, or you may update your conan
@@ -147,7 +148,7 @@ Visual Studio Code
 
 Open the supercell-wx source directory in Visual Studio Code. Open the Settings
 Window, and filter on CMake. In Workspace settings, set your Build Directory to
-the directory you configured previously.
+your desired destination.
 
 .. image:: images/developer-setup-02-vscode-cmake-build-dir.png
 
