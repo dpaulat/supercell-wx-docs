@@ -1,34 +1,36 @@
 Settings
-=============
+========
 
-Settings can be accessed from the menu by selecting **File > Settings**. The settings menu
-contains three categories, General, Palettes and Text. 
+Settings can be accessed from the menu by selecting **File > Settings**. The
+**Settings** menu contains four categories: General, Palettes, Audio, and Text.
 
 .. image:: images/settings-general-04-restore-defaults.png
 
-Settings can be globally restored to default
-with the Restore Defaults button in the lower left corner.
+Settings can be globally restored to default with the **Restore Defaults**
+button in the lower left corner.
 
 .. image:: images/settings-general-05-individual-restore-default.png
 
-Individual settings can be restored to their default with the circle arrow button
-beside the respective setting.
+Individual settings can be restored to their default with the circle arrow
+button beside the respective setting.
 
 .. note:: Most settings will require reloading the application to take effect.
 
 General
-----------
+-------
 
 Default Radar Site
 ^^^^^^^^^^^^^^^^^^
-Choose which radar site will load automatically upon opening the app. The map will also
-be centered over the selected radar site.
+
+Choose which radar site will load automatically upon opening the application.
+The map will also be centered over the selected radar site.
 
 Grid Width and Height
 ^^^^^^^^^^^^^^^^^^^^^
-These settings allow multiple radar products to be viewed simultaneously. Changing 
-Grid Width will create panes side by side, while Grid Height will create panes top and 
-bottom. The maximum value for both is two.
+
+These settings allow multiple radar products to be viewed simultaneously.
+Changing  Grid Width will create panes side by side, while Grid Height will
+create panes top and bottom. The maximum value for both is two.
 
 *Layout with a Grid Width of 2 and a Grid Height of 1*
 
@@ -56,15 +58,15 @@ Input API key to be used when using Mapbox as the map provider
 
 MapTiler API Key
 ^^^^^^^^^^^^^^^^
-Input API key to be used when using MapTiler as the map provider. The available API keys can be
-found `on the account API Keys page
+Input API key to be used when using MapTiler as the map provider. The available
+API keys can be found `on the account API Keys page
 <https://cloud.maptiler.com/account/keys/>`_
 
 Default Alert Action
 ^^^^^^^^^^^^^^^^^^^^
 Changes what happens when selecting an alert in the Alerts panel.
 
-- Go (Default) - Switch to issuing radar site and pan map to location. 
+- Go (Default) - Switch to issuing radar site and pan map to location.
 - View - Open Alert to view text issued from NWS.
 
 Update Notifications Enabled
@@ -74,10 +76,11 @@ Notify the user of updates to Supercell Wx.
 
 Debug Enabled
 ^^^^^^^^^^^^^
-Enables the debug options menu.
+
+Enables the **Debug** options menu.
 
 Palettes
-----------
+--------
 
 The map and radar display have multiple customization options, including color
 tables. The default color tables come from `NOAA's Weather and Climate Toolkit
@@ -99,17 +102,60 @@ picker to select a color.
 
 .. image:: images/settings-palette-02-alerts.png
 
-Text
-----------
+Audio
+-----
 
-Under the text menu, the user is given several different customization options to adjust the font and style to the user's liking.
+Audio notifications can be selectively enabled for alerts from the **Audio**
+tab.
+
+.. image:: images/settings-audio-01.png
+
+Sound
+^^^^^
+
+By default, the two-tone Attention Signal used by the Emergency Alert System is
+played when a new or updated alert occurs for the selected location. An
+alternate audio file can be selected and sampled using the buttons to the right
+of the file path.
+
+Location Method
+^^^^^^^^^^^^^^^
+
+Fixed
+"""""
+
+The **Fixed** location method will allow the user to manually enter a latitude and
+longitude for alert audio notificatons.
+
+Track
+"""""
+
+When using the **Track** location method, Supercell Wx will request location
+information from the operating system. This may result in the operating system
+notifying the user that Supercell Wx is using location information.
+
+County
+""""""
+
+With the **County** location method, the user can select a county. Pressing the
+adjacent tool button will open a county selection dialog.
+
+.. image:: images/settings-audio-02-county.png
+
+Text
+----
+
+Under the text menu, the user is given several different customization options
+to adjust the font and style to the user's liking.
 
 .. image:: images/settings-text-01.png
 
 Choosing the font
 ^^^^^^^^^^^^^^^^^^
 
-The user can select the font they'd like to use by choosing either the default display item or the tooltip display item, and then hitting the 3 dots next to the font name.
+The user can select the font they'd like to use by choosing either the default
+display item or the tooltip display item, and then hitting the 3 dots next to
+the font name.
 
 .. image:: images/settings-text-02-select-font.png
 
@@ -120,7 +166,9 @@ The user can select the font they'd like to use by choosing either the default d
 Tooltip method
 ^^^^^^^^^^^^^^
 
-The tooltip method allows the user to change the method used for which pop-ups are displayed. The user is also able to change the character wrap size if the text from placefiles appear to be too long on the user's screen.
+The tooltip method allows the user to change the method used for which pop-ups
+are displayed. The user is also able to change the character wrap size if the
+text from placefiles appear to be too long on the user's screen.
 
 *Tooltip methods*
 
