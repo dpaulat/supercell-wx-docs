@@ -62,3 +62,22 @@ any of the 1-4 grid panels.
 
 Some layers are not adjustable by design, such as the Map Overlay, Color Table,
 Map Symbology, and the Map Underlay.
+
+Shortcut
+^^^^^^^^
+
+Select layers are available to display or hide from the **View > Map Layers**
+menu as a quick shortcut for commonly-toggled layers. Selecting a layer from
+this menu will display or hide the layer from all maps in the grid.
+
+Layer Descriptions
+^^^^^^^^^^^^^^^^^^
+
+Radar Sites
+"""""""""""
+
+This layer allows Radar Site selection from the map.
+
+Shortcut: **View > Map Layers > Radar Sites**
+
+.. image:: images/layer-manager-10-radar-sites.png

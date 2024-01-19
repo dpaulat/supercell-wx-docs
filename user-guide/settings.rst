@@ -19,6 +19,17 @@ button beside the respective setting.
 General
 -------
 
+Theme
+^^^^^
+
+**Default** will select the default Qt theme for the operating system being used.
+For Windows, this is the *Windows Vista* style, and for Linux, this is the
+*Fusion* style. This typically gives a native look-and-feel consistent with the
+rest of the operating system.
+
+**Fusion** will select the Fusion theme. On Linux, this is already the default.
+On Windows, this will enable a Dark Mode if turned on in Windows settings.
+
 Default Radar Site
 ^^^^^^^^^^^^^^^^^^
 
