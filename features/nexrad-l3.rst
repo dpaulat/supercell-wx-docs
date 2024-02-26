@@ -395,7 +395,7 @@ Weather Service:
           <tr class="row-even">
             <td><p>170</p></td>
             <td><p>Digital Accumulation Array</p></td>
-            <td class="scwx-partial-support"><p>DAA<a href="#table-footnotes">*</a></p></td>
+            <td class="scwx-supported"><p>DAA<a href="#table-footnotes">‡</a></p></td>
           </tr>
           <tr class="row-odd">
             <td><p>171</p></td>
@@ -405,12 +405,12 @@ Weather Service:
           <tr class="row-even">
             <td><p>172</p></td>
             <td><p>Digital Storm Total Accumulation</p></td>
-            <td class="scwx-partial-support"><p>DTA<a href="#table-footnotes">*</a></p></td>
+            <td class="scwx-supported"><p>DTA<a href="#table-footnotes">‡</a></p></td>
           </tr>
           <tr class="row-odd">
             <td><p>173</p></td>
             <td><p>Digital User-Selectable Accumulation</p></td>
-            <td class="scwx-partial-support"><p>DU3<br/>DU6<a href="#table-footnotes">*</a></p></td>
+            <td class="scwx-supported"><p>DU3<br/>DU6<a href="#table-footnotes">‡</a></p></td>
           </tr>
           <tr class="row-even">
             <td><p>174</p></td>
@@ -495,6 +495,7 @@ Weather Service:
 
 | \* Supported with manual loading
 | † Known color table issues
+| ‡ Unit display disabled
 
 Legend
 ------
