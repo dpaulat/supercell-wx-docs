@@ -80,12 +80,12 @@ Weather Service:
           <tr class="row-odd">
             <td><p>57</p></td>
             <td><p>Vertically Integrated Liquid</p></td>
-            <td class="scwx-partial-support"><p>NVL<a href="#table-footnotes">*</a></p></td>
+            <td class="scwx-supported"><p>NVL</p></td>
           </tr>
           <tr class="row-even">
             <td><p>58</p></td>
             <td><p>Storm Tracking Information</p></td>
-            <td class="scwx-unsupported"><p>NST</p></td>
+            <td class="scwx-supported"><p>NST</p></td>
           </tr>
           <tr class="row-odd">
             <td><p>59</p></td>
@@ -265,7 +265,7 @@ Weather Service:
           <tr class="row-even">
             <td><p>134</p></td>
             <td><p>High Resolution VIL</p></td>
-            <td class="scwx-unsupported"><p>DVL</p></td>
+            <td class="scwx-supported"><p>DVL</p></td>
           </tr>
           <tr class="row-odd">
             <td><p>135</p></td>
