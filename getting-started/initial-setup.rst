@@ -107,8 +107,8 @@ Now that the application has been configured, it is ready for use.
 Map Controls
 ------------
 
-Supercell Wx uses `MapLibre GL Native
-<https://github.com/maplibre/maplibre-gl-native>`_ to render a responsive map.
+Supercell Wx uses `MapLibre Native Qt
+<https://github.com/maplibre/maplibre-native-qt>`_ to render a responsive map.
 
 To pan the map, left-click and drag the mouse. To rotate the map, right-click
 and drag the mouse. To reset the rotation to a north-up orientation, left-click

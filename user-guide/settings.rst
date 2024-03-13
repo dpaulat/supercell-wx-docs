@@ -80,6 +80,22 @@ Changes what happens when selecting an alert in the Alerts panel.
 - Go (Default) - Switch to issuing radar site and pan map to location.
 - View - Open Alert to view text issued from NWS.
 
+Anti-Aliasing Enabled
+^^^^^^^^^^^^^^^^^^^^^
+Allows enabling and disabling of anti-aliasing on the map. Disabling can improve
+performance, but may result in graphics with rougher edges. Changing this
+setting requires restarting the application.
+
+Show Map Attribution / Logo
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+If you have permission to hide map attribution, these selections allow you to do
+so. At the time of writing, Mapbox does not advertise permission to hide
+attribution. MapTiler allows hiding of the logo for paid subscriptions, but
+still requires the attribution unless a special license has been granted.
+
+- `Mapbox Attribution Guidelines <https://docs.mapbox.com/help/dive-deeper/attribution/>`_
+- `MapTiler Attribution Guidelines <https://documentation.maptiler.com/hc/en-us/articles/4405445885457-How-to-add-MapTiler-attribution-to-a-map>`_
+
 Update Notifications Enabled
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -188,3 +204,7 @@ text from placefiles appear to be too long on the user's screen.
 *Character wrap and placefile text drop shadow*
 
 .. image:: images/settings-text-05-character-wrap.png
+
+*Radar Site Hover Text Enabled*
+
+Enables or disables a description of each radar site when hovered over.

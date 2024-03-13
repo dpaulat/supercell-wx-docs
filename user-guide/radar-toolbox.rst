@@ -216,7 +216,8 @@ measurements obtained from Level 2 radar data over larger areas and time periods
 to create a simplified representation of motion patterns. You can view Level 3
 Velocity as Super-Resolution Data or as the standard Digital Velocity data.
 
-Tilt Selection:
+Tilt Selection
+""""""""""""""
 
 .. image:: images/radar-toolbox-04-level3-tilt.png
 
