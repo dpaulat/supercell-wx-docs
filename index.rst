@@ -5,11 +5,11 @@ Supercell Wx is a free, open source application to visualize live and archive
 NEXRAD Level 2 and Level 3 data, and severe weather alerts. It displays
 continuously updating weather data on top of a responsive map, providing the
 capability to monitor weather events using reflectivity, velocity, and other
-products.
+products. Extended functionality, including weather reports and lightning data
+can be added using placefiles.
 
-Future versions of the application will bring features such as weather reports,
-lightning data, placefile support, and much more. See the development roadmap
-for details.
+Future versions of the application will continue to bring additional features.
+See the development roadmap for details.
 
 .. toctree::
    :maxdepth: 1
