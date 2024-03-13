@@ -55,7 +55,7 @@ Weather Service:
           <tr class="row-even">
             <td><p>41</p></td>
             <td><p>Echo Tops</p></td>
-            <td class="scwx-partial-support"><p>NET<a href="#table-footnotes">*</a></p></td>
+            <td class="scwx-supported"><p>NET</p></td>
           </tr>
           <tr class="row-odd">
             <td><p>48</p></td>
@@ -270,7 +270,7 @@ Weather Service:
           <tr class="row-odd">
             <td><p>135</p></td>
             <td><p>Enhanced Echo Tops</p></td>
-            <td class="scwx-partial-support"><p>EET<a href="#table-footnotes">*&dagger;</a></p></td>
+            <td class="scwx-supported"><p>EET</p></td>
           </tr>
           <tr class="row-even">
             <td><p>137</p></td>
