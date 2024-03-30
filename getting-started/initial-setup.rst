@@ -136,6 +136,7 @@ with the `GRLevelX <http://www.grlevelx.com/>`_ `Color Table File Specification
 Additional color tables can be found at a number of sites, including:
 
 - https://grlevelxusers.com/grlevelx-goodies/categories/color-tables/
+- https://grx.almanydesigns.com/downloads/ (Color Table Format V3.0+ is not supported)
 - https://www.wxtools.org/
 
 In addition to color tables, alert colors can also be modified. Use the text box
