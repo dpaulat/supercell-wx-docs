@@ -19,22 +19,29 @@ button beside the respective setting.
 General
 -------
 
-Theme
-^^^^^
+Clock Format
+^^^^^^^^^^^^
 
-**Default** will select the default Qt theme for the operating system being used.
-For Windows, this is the *Windows Vista* style, and for Linux, this is the
-*Fusion* style. This typically gives a native look-and-feel consistent with the
-rest of the operating system.
+Toggle between a 12-hour and 24-hour clock display.
 
-**Fusion** will select the Fusion theme. On Linux, this is already the default.
-On Windows, this will enable a Dark Mode if turned on in Windows settings.
+Default Alert Action
+^^^^^^^^^^^^^^^^^^^^
+Changes what happens when selecting an alert in the Alerts panel.
+
+- Go (Default) - Switch to issuing radar site and pan map to location.
+- View - Open Alert to view text issued from NWS.
 
 Default Radar Site
 ^^^^^^^^^^^^^^^^^^
 
 Choose which radar site will load automatically upon opening the application.
 The map will also be centered over the selected radar site.
+
+Default Time Zone
+^^^^^^^^^^^^^^^^^
+
+Select between displaying the time zone of the selected radar, the user's local
+time zone, or UTC.
 
 Grid Width and Height
 ^^^^^^^^^^^^^^^^^^^^^
@@ -55,6 +62,23 @@ create panes top and bottom. The maximum value for both is two.
 
 .. image:: images/settings-general-03-gridwh-w2-h2-small.png
 
+GPS Plugin
+^^^^^^^^^^
+
+Selected between the operating system default GPS provider and an external
+device supporting the NMEA protocol. When selecting NMEA, either a serial source
+or a network source should be selected. For the proper GPS baud rate, Supercell
+Wx attempts to determine the correct value based on information supplied by the
+operating system. Please consult your GPS manual for the proper value.
+
+For selecting a network source, please see `Qt documentation
+<https://doc.qt.io/qt-6/position-plugin-nmea.html#parameters>`_ for proper
+format.
+
+If using **gpsd** on Linux to serve GPS information to Supercell Wx, you will
+need to use `gpspipe and socat <https://gpsd.gitlab.io/gpsd/gpspipe.html#_examples>`_
+to serve NMEA data.
+
 Map Provider
 ^^^^^^^^^^^^
 Select the provider for the map underlays. Currently Mapbox and MapTiler are
@@ -65,7 +89,7 @@ supported.
 
 Mapbox API Key
 ^^^^^^^^^^^^^^
-Input API key to be used when using Mapbox as the map provider
+Input API key to be used when using Mapbox as the map provider.
 
 MapTiler API Key
 ^^^^^^^^^^^^^^^^
@@ -73,12 +97,29 @@ Input API key to be used when using MapTiler as the map provider. The available
 API keys can be found `on the account API Keys page
 <https://cloud.maptiler.com/account/keys/>`_
 
-Default Alert Action
-^^^^^^^^^^^^^^^^^^^^
-Changes what happens when selecting an alert in the Alerts panel.
+Theme
+^^^^^
 
-- Go (Default) - Switch to issuing radar site and pan map to location.
-- View - Open Alert to view text issued from NWS.
+**Default** will select the default Qt theme for the operating system being used.
+For Windows, this is the *Windows Vista* style, and for Linux, this is the
+*Fusion* style. This typically gives a native look-and-feel consistent with the
+rest of the operating system.
+
+**Fusion** will select the Fusion theme. On Linux, this is already the default.
+On Windows, this will enable a Dark Mode if turned on in Windows settings.
+
+Warnings Provider
+^^^^^^^^^^^^^^^^^
+
+Supercell Wx supports multiple warnings providers:
+
+- https://warnings.cod.edu
+- https://warnings.allisonhouse.edu
+
+.. note:: Supercell Wx integration with AllisonHouse warnings relies upon an
+    HTTP directory listing. Most of the time this is operational, but is an
+    unsupported feature that AllisonHouse provides. For this reason, the COD
+    source is currently more reliable.
 
 Anti-Aliasing Enabled
 ^^^^^^^^^^^^^^^^^^^^^
@@ -95,6 +136,11 @@ still requires the attribution unless a special license has been granted.
 
 - `Mapbox Attribution Guidelines <https://docs.mapbox.com/help/dive-deeper/attribution/>`_
 - `MapTiler Attribution Guidelines <https://documentation.maptiler.com/hc/en-us/articles/4405445885457-How-to-add-MapTiler-attribution-to-a-map>`_
+
+Show Map Center
+^^^^^^^^^^^^^^^
+
+Display an icon at the center of the map.
 
 Update Notifications Enabled
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^

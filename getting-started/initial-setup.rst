@@ -114,12 +114,14 @@ To pan the map, left-click and drag the mouse. To rotate the map, right-click
 and drag the mouse. To reset the rotation to a north-up orientation, left-click
 the compass icon in the upper right corner of the map. Use the mouse wheel to
 zoom, or double click using the left or right mouse button to zoom in or out
-respectively. Pressing ``s`` or both left and right mouse buttons will cycle
-through map styles, including light, dark and satellite underlays.
+respectively. Pressing ``z`` (configurable via hotkey settings) or both left and
+right mouse buttons will cycle through map styles, including light, dark and
+satellite underlays.
 
 For more information about the displayed radar product, hover over the time in
 the upper right of the map. Hold the ``SHIFT`` key to view radar moment data or
-other derived information underneath the cursor.
+other derived information underneath the cursor. Hold the ``CTRL`` key to
+display a tick marker on each map pane indicating the current mouse location.
 
 Customization
 -------------
