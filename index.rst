@@ -17,6 +17,7 @@ See the development roadmap for details.
    :name: sec-getting-started
 
    getting-started/initial-setup
+   getting-started/faq
 
 .. toctree::
    :maxdepth: 1
