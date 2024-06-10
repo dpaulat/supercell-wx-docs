@@ -114,12 +114,7 @@ Warnings Provider
 Supercell Wx supports multiple warnings providers:
 
 - https://warnings.cod.edu
-- https://warnings.allisonhouse.edu
-
-.. note:: Supercell Wx integration with AllisonHouse warnings relies upon an
-    HTTP directory listing. Most of the time this is operational, but is an
-    unsupported feature that AllisonHouse provides. For this reason, the COD
-    source is currently more reliable.
+- https://warnings.allisonhouse.com
 
 Anti-Aliasing Enabled
 ^^^^^^^^^^^^^^^^^^^^^
