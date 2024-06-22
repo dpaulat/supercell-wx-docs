@@ -115,9 +115,13 @@ and re-open the application. On Windows, the cache is a ``.db`` file located at
 ``%LocalAppData%\Supercell Wx\`` or ``C:\Users\<username>\AppData\Local\Supercell Wx\``.
 On Linux, the cache is located at ``~/.local/share/Supercell Wx/``.
 
-.. note:: Custom Mapbox styles are supported up to Mapbox GL JS 1.10.0+. Later
-    Mapbox SDK versions may have issues, as some newer features are not
-    currently supported by `MapLibre <https://github.com/maplibre/maplibre-native>`_.
+.. note:: Custom Mapbox styles are supported up to at least Mapbox GL JS
+    1.10.0+. Later Mapbox SDK versions may have issues, as not all newer
+    features are currently supported by the `MapLibre <https://maplibre.org/>`_
+    `Style Specification <https://maplibre.org/maplibre-style-spec/>`_.
+    Feature parity between `Mapbox <https://docs.mapbox.com/style-spec/guides/>`_
+    and MapLibre are not one-to-one, with a divergence somewhere around or after
+    v8.
 
 Custom Map Layer
 ^^^^^^^^^^^^^^^^
