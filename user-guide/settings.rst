@@ -110,6 +110,11 @@ A MapTiler map URL typically has the format:
 Style** in MapTiler Cloud. Note the ``?key=...`` suffix must be removed from the
 URL string.
 
+When modifying a style, you may need to close Supercell Wx, delete the cache,
+and re-open the application. On Windows, the cache is a ``.db`` file located at
+``%LocalAppData%\Supercell Wx\`` or ``C:\Users\<username>\AppData\Local\Supercell Wx\``.
+On Linux, the cache is located at ``~/.local/share/Supercell Wx/``.
+
 .. note:: Custom Mapbox styles are supported up to Mapbox GL JS 1.10.0+. Later
     Mapbox SDK versions may have issues, as some newer features are not
     currently supported by `MapLibre <https://github.com/maplibre/maplibre-native>`_.
