@@ -97,6 +97,31 @@ Input API key to be used when using MapTiler as the map provider. The available
 API keys can be found `on the account API Keys page
 <https://cloud.maptiler.com/account/keys/>`_
 
+Custom Map URL
+^^^^^^^^^^^^^^
+URL for a custom map style. This can be a map from either Mapbox Studio or
+MapTiler Cloud.
+
+A Mapbox map URL has the format: ``mapbox://styles/<username>/<id>``. This is
+labeled as the **Style URL** in Mapbox Studio.
+
+A MapTiler map URL typically has the format:
+``https://api.maptiler.com/maps/<id>/style.json``. This is labeled as **Vector
+Style** in MapTiler Cloud. Note the ``?key=...`` suffix must be removed from the
+URL string.
+
+.. note:: Custom Mapbox styles are supported up to Mapbox GL JS 1.10.0+. Later
+    Mapbox SDK versions may have issues, as some newer features are not
+    currently supported by `MapLibre <https://github.com/maplibre/maplibre-native>`_.
+
+Custom Map Layer
+^^^^^^^^^^^^^^^^
+When using a custom map, Supercell Wx needs to know underneath which layer to
+render the radar product and other items. When viewing the Layer Manager, the
+layer name specified here (in regular expression format), and all higher
+priority layers become the Map Symbology. Layers underneath this become the Map
+Underlay.
+
 Theme
 ^^^^^
 
