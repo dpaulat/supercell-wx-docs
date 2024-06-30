@@ -17,7 +17,7 @@ Required Tools
 
 - `CMake >= 3.21 <https://cmake.org/download/>`_
 - `Git <https://git-scm.com/download/win>`_
-- `Python 3 <https://www.python.org/downloads/windows/>`_
+- `Python >= 3.10 <https://www.python.org/downloads/windows/>`_
 - `Qt 6.7.1 <https://www.qt.io/download-open-source>`_
 
   - For Microsoft Visual Studio >= 2019, install Qt for **MSVC 2019 64-bit**
