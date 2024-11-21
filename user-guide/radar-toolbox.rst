@@ -254,9 +254,6 @@ Archive View
 
 With Archive View, you have the ability to access historical radar data.
 
-.. note:: Older Level 2 formats, circa 2008 and prior, are not currently
-          supported.
-
 Animation Controls
 ^^^^^^^^^^^^^^^^^^
 
