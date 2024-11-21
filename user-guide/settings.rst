@@ -140,7 +140,36 @@ For Windows, this is the *Windows Vista* style, and for Linux, this is the
 rest of the operating system.
 
 **Fusion** will select the Fusion theme. On Linux, this is already the default.
-On Windows, this will enable a Dark Mode if turned on in Windows settings.
+On Windows, this typically enables a Dark Mode if turned on in Windows settings.
+
+**Fusion Light** will select the Fusion theme and attempt to use a Light Mode
+palette. You can use this to override the default Light or Dark Mode selection
+from the Fusion theme. Note the override does not work in some desktop
+environments.
+
+**Fusion Dark** will select the Fusion theme and attempt to use a Dark Mode
+palette. You can use this to override the default Light or Dark Mode selection
+from the Fusion theme. Note the override does not work in some desktop
+environments.
+
+**Fusion Custom** will select the Fusion theme and allow the user to supply a
+custom `color scheme <#theme-file>`_.
+
+Additional Fusion Themes are available for selection. These will select the
+Fusion theme along with a specific color scheme.
+
+- Fusion Airy
+- Fusion Darker
+- Fusion Dusk
+- Fusion IA Ora
+- Fusion Sand
+- Fusion Waves
+
+Theme File
+^^^^^^^^^^
+When using the **Fusion Custom** Theme, allows the the use of a custom color
+scheme. See `qt6ct <https://github.com/trialuser02/qt6ct/tree/master/colors>`_
+for sample palettes.
 
 Warnings Provider
 ^^^^^^^^^^^^^^^^^
@@ -184,6 +213,9 @@ Enables the **Debug** options menu.
 Palettes
 --------
 
+Color Tables
+^^^^^^^^^^^^
+
 The map and radar display have multiple customization options, including color
 tables. The default color tables come from `NOAA's Weather and Climate Toolkit
 <https://www.ncdc.noaa.gov/wct/index.php>`_, but can be modified from the
@@ -198,11 +230,20 @@ Additional color tables can be found at a number of sites, including:
 - https://grlevelxusers.com/grlevelx-goodies/categories/color-tables/
 - https://www.wxtools.org/
 
-In addition to color tables, alert colors can also be modified. Use the text box
-to specify a color in ARGB hexadecimal format (#aarrggbb), or use the color
-picker to select a color.
+Alerts
+^^^^^^
+
+In addition to color tables, alert colors can also be modified. First, select
+the Phenomenon from the list. Next, select the adjacent tool button next to the
+Category.
 
 .. image:: images/settings-palette-02-alerts.png
+
+Use the text boxes to specify a colors in ARGB hexadecimal format (#aarrggbb),
+or use the color pickers to select a color. Adjust the width value to customize
+the appearance of the line further.
+
+.. image:: images/settings-palette-03-edit-line.png
 
 Audio
 -----
@@ -236,6 +277,18 @@ When using the **Track** location method, Supercell Wx will request location
 information from the operating system. This may result in the operating system
 notifying the user that Supercell Wx is using location information.
 
+Radar Site
+""""""""""
+
+The **Radar Site** location method will enable alerts issued within a selected
+radius from the selected Radar Site. In addition to selecting a radar site, two
+special values can be selected.
+
+- With Radar Site set to **default**, the default radar site will always be used
+  when determining whether to play an alert sound.
+- With Radar Site set to **follow**, the currently selected radar site will be
+  used when determining whether to play an alert sound.
+
 County
 """"""
 
@@ -243,6 +296,20 @@ With the **County** location method, the user can select a county. Pressing the
 adjacent tool button will open a county selection dialog.
 
 .. image:: images/settings-audio-02-county.png
+
+WFO
+"""
+
+With the **WFO** location method, the user can select a Weather Forecast Office.
+Pressing the adjacent tool button will open a WFO selection dialog.
+
+.. image:: images/settings-audio-03-wfo.png
+
+All
+"""
+
+With the **All** location method, alert audio notifications will be played for
+any location.
 
 Text
 ----
