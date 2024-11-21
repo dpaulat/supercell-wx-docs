@@ -261,6 +261,14 @@ played when a new or updated alert occurs for the selected location. An
 alternate audio file can be selected and sampled using the buttons to the right
 of the file path.
 
+Radius
+^^^^^^
+
+For Fixed, Track, and Radar Site location methods, an audio notification will
+be triggered whenever an alert is within the selected radius of the given
+location. Setting the radius to 0 will only trigger a notification when the
+location is inside the alert.
+
 Location Method
 ^^^^^^^^^^^^^^^
 
