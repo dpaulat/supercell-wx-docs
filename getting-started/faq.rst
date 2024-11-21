@@ -5,7 +5,7 @@ Frequently Asked Questions
    :local:
 
 Before getting started, please read the `User Guide
-<https://supercell-wx.readthedocs.io/en/stable/index.html>`_.
+<https://supercell-wx.readthedocs.io/en/stable/>`_.
 
 `Latest Announcements <https://discord.com/channels/1021112836316995715/1021114968143315024>`_
 
@@ -86,7 +86,7 @@ Using Supercell Wx
 
 How do I...
 ~~~~~~~~~~~
-Before asking, please read the `User Guide <https://supercell-wx.readthedocs.io/en/stable/>_`.
+Before asking, please read the `User Guide <https://supercell-wx.readthedocs.io/en/stable/>`_.
 
 How do I set my home point?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
