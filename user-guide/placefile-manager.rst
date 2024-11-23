@@ -78,6 +78,7 @@ Free
 ----
 * Supercell Wx hosted: https://placefiles.supercellwx.net/
 * FreeLightning: https://www.freelightning.com/
+* Ham Weather Net: https://placefiles.hamweathernet.org/
 * Iowa State University: https://mesonet.agron.iastate.edu/request/grx/
 * Placefile Nation: http://placefilenation.com/#placefiles
 * Red Team Weather: http://www.redteamwx.com/grlevelx.html
