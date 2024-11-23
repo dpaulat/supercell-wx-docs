@@ -18,7 +18,7 @@ Required Tools
 - `CMake >= 3.21 <https://cmake.org/download/>`_
 - `Git <https://git-scm.com/download/win>`_
 - `Python >= 3.10 <https://www.python.org/downloads/windows/>`_
-- `Qt 6.7.1 <https://www.qt.io/download-open-source>`_
+- `Qt 6.8.0 <https://www.qt.io/download-open-source>`_
 
   - For Microsoft Visual Studio >= 2019, install Qt for **MSVC 2019 64-bit**
   - For Linux GCC, install Qt for **Desktop gcc 64-bit**
@@ -32,22 +32,22 @@ Required Tools
     .. image:: images/developer-setup-01-qt-install-small.png
 
   - See setup-* scripts for current version
-  - Add the ``bin`` directory to your system ``PATH`` variable (e.g., ``C:\Qt\6.7.1\msvc2019_64\bin``)
+  - Add the ``bin`` directory to your system ``PATH`` variable (e.g., ``C:\Qt\6.8.0\msvc2019_64\bin``)
   - Alternate install via aqtinstall (installs to a versioned subdirectory
     within the current directory)
 
     .. code:: bash
 
       > pip install --upgrade aqtinstall
-      > aqt install-qt windows desktop 6.7.1 win64_msvc2019_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
-      > aqt install-qt linux desktop 6.7.1 linux_gcc_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
+      > aqt install-qt windows desktop 6.8.0 win64_msvc2019_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
+      > aqt install-qt linux desktop 6.8.0 linux_gcc_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
 
     - See https://ddalcino.github.io/aqt-list-server/ for additional configurations
 
 .. note:: Qt versions maintain a level of compatibility between patch releases
-          of the same major and minor versions (e.g., 6.7.0 through 6.7.3). No
+          of the same major and minor versions (e.g., 6.8.0 through 6.8.3). No
           issues are expected moving between patch releases. Breaking changes
-          may sometimes be introduced in minor releases (e.g., 6.7 to 6.8). As
+          may sometimes be introduced in minor releases (e.g., 6.8 to 6.9). As
           new releases become available, older releases should remain available
           via the Archive selection filter in the Qt Maintenance Tool or via
           aqtinstall.
