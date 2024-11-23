@@ -245,6 +245,17 @@ the appearance of the line further.
 
 .. image:: images/settings-palette-03-edit-line.png
 
+Units
+-----
+
+Units displayed in Supercell Wx for both radar products and dialogs can be
+configured from the **Units** tab. Standard, metric, and other units are
+available, as well as a **User-defined** selection. With **User-defined**
+selected, radar product units will be determined based on the **Scale**, **Offset** and
+**Units** fields defined in the color table for each applicable product.
+
+.. image:: images/settings-units-01.png
+
 Audio
 -----
 
@@ -358,3 +369,12 @@ text from placefiles appear to be too long on the user's screen.
 *Radar Site Hover Text Enabled*
 
 Enables or disables a description of each radar site when hovered over.
+
+Hotkeys
+-------
+
+Hotkey shortcuts can be configured from the **Hotkeys** tab. This allows the
+customization and control of Supercell Wx using the keyboard for most common
+functions.
+
+.. image:: images/settings-hotkeys-01.png
