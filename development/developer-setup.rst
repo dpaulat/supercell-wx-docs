@@ -20,7 +20,7 @@ Required Tools
 - `Python >= 3.10 <https://www.python.org/downloads/windows/>`_
 - `Qt 6.8.0 <https://www.qt.io/download-open-source>`_
 
-  - For Microsoft Visual Studio >= 2019, install Qt for **MSVC 2019 64-bit**
+  - For Microsoft Visual Studio >= 2022, install Qt for **MSVC 2022 64-bit**
   - For Linux GCC, install Qt for **Desktop gcc 64-bit**
   - Additional libraries
 
