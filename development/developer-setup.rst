@@ -32,14 +32,14 @@ Required Tools
     .. image:: images/developer-setup-01-qt-install-small.png
 
   - See setup-* scripts for current version
-  - Add the ``bin`` directory to your system ``PATH`` variable (e.g., ``C:\Qt\6.8.0\msvc2019_64\bin``)
+  - Add the ``bin`` directory to your system ``PATH`` variable (e.g., ``C:\Qt\6.8.0\msvc2022_64\bin``)
   - Alternate install via aqtinstall (installs to a versioned subdirectory
     within the current directory)
 
     .. code:: bash
 
       > pip install --upgrade aqtinstall
-      > aqt install-qt windows desktop 6.8.0 win64_msvc2019_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
+      > aqt install-qt windows desktop 6.8.0 win64_msvc2022_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
       > aqt install-qt linux desktop 6.8.0 linux_gcc_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
 
     - See https://ddalcino.github.io/aqt-list-server/ for additional configurations
