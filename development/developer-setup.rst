@@ -15,7 +15,7 @@ Required Tools
     - GCC/G++ >= 11
     - Ninja (ninja-build) recommended
 
-- `CMake >= 3.21 <https://cmake.org/download/>`_
+- `CMake >= 3.24 <https://cmake.org/download/>`_
 - `Git <https://git-scm.com/download/win>`_
 - `Python >= 3.10 <https://www.python.org/downloads/windows/>`_
 - `Qt 6.8.0 <https://www.qt.io/download-open-source>`_
@@ -118,8 +118,9 @@ Code), although ensure you include the proper CMake variables (-D) when
 configuring.
 
 .. note:: CMake multi-config (i.e., single build directory for Debug and
-          Release) is currently not supported. This is expected to be supported
-          upon migration to Conan 2.x.
+          Release) is currently not supported. While a multi-config workspace
+          will properly generate, some autogeneration tasks do not run as they
+          should, causing linker errors.
 
 Using the default setup scripts, CMake will generate Visual Studio solution
 files for Windows, and Ninja build files for Linux. To change this behavior, add
@@ -132,7 +133,7 @@ properly, as well as your conan profile.
 
 When configuring on Linux, you may encounter an error due to missing packages
 from your system. These may be installed manually, or you may update your conan
-global configuration (``~/.conan/global.conf``):
+global configuration (``~/.conan2/global.conf``):
 
 .. code::
 
