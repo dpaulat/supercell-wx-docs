@@ -25,6 +25,7 @@ See the development roadmap for details.
    :name: sec-user-guide
 
    user-guide/layer-manager
+   user-guide/location-marker-manager
    user-guide/placefile-manager
    user-guide/radar-toolbox
    user-guide/settings
