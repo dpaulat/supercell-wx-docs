@@ -14,24 +14,26 @@ The user can add a location marker by clicking on the Add button in the
 location marker manager or by using the Add Location Marker hotkey while on the
 map (the default is M). The Add button requires the manual input of a latitude
 and longitude, whereas the hotkey will place the marker at the location of the
-mouse on the map. Both methods will show the `Edit Location Marker dialog
-<#edit-location-marker-dialog>`_. When adding a new location marker, canceling
-the dialog will delete the location marker.
+mouse on the map. Both methods will show the
+:ref:`edit-location-marker-dialog`. When adding a new location marker,
+canceling the dialog will delete the location marker.
 
 Editing a location marker
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A location marker can be edited by either right clicking it on the map, or
-double clicking it in the Location Marker Manager. Either will open the `Edit
-Location Marker dialog <#edit-location-marker-dialog>`_. When editing,
-canceling the dialog will not apply any changes to the location marker.
+double clicking it in the Location Marker Manager. Either will open the
+:ref:`edit-location-marker-dialog`. When editing, canceling the dialog will not
+apply any changes to the location marker.
 
 Removing a location marker
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A location marker can be removed by either selecting it in the Location Marker
-manager and pressing Remove or by pressing Delete in the `Edit Location Marker
-dialog <#edit-location-marker-dialog>`_.
+manager and pressing Remove or by pressing Delete in the
+:ref:`edit-location-marker-dialog`.
+
+.. _edit-location-marker-dialog:
 
 Edit Location Marker Dialog
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
