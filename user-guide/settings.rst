@@ -21,7 +21,6 @@ General
 
 Clock Format
 ^^^^^^^^^^^^
-
 Toggle between a 12-hour and 24-hour clock display.
 
 Default Alert Action
@@ -33,19 +32,16 @@ Changes what happens when selecting an alert in the Alerts panel.
 
 Default Radar Site
 ^^^^^^^^^^^^^^^^^^
-
 Choose which radar site will load automatically upon opening the application.
 The map will also be centered over the selected radar site.
 
 Default Time Zone
 ^^^^^^^^^^^^^^^^^
-
 Select between displaying the time zone of the selected radar, the user's local
 time zone, or UTC.
 
 Grid Width and Height
 ^^^^^^^^^^^^^^^^^^^^^
-
 These settings allow multiple radar products to be viewed simultaneously.
 Changing  Grid Width will create panes side by side, while Grid Height will
 create panes top and bottom. The maximum value for both is two.
@@ -64,7 +60,6 @@ create panes top and bottom. The maximum value for both is two.
 
 GPS Plugin
 ^^^^^^^^^^
-
 Selected between the operating system default GPS provider and an external
 device supporting the NMEA protocol. When selecting NMEA, either a serial source
 or a network source should be selected. For the proper GPS baud rate, Supercell
@@ -133,7 +128,6 @@ Underlay.
 
 Theme
 ^^^^^
-
 **Default** will select the default Qt theme for the operating system being used.
 For Windows, this is the *Windows Vista* style, and for Linux, this is the
 *Fusion* style. This typically gives a native look-and-feel consistent with the
@@ -173,17 +167,29 @@ for sample palettes.
 
 Warnings Provider
 ^^^^^^^^^^^^^^^^^
-
 Supercell Wx supports multiple warnings providers:
 
 - https://warnings.cod.edu
 - https://warnings.allisonhouse.com
+
+Radar Site Threshold
+^^^^^^^^^^^^^^^^^^^^
+When the Radar Sites map layer is displayed, the site selections are always
+displayed, regardless of the map zoom level. To hide the selections at wider
+zoom levels, increase this value. To hide the selections at narrower zoom
+levels, decrease this value. To keep site selections always displayed, leave
+this value at zero.
 
 Anti-Aliasing Enabled
 ^^^^^^^^^^^^^^^^^^^^^
 Allows enabling and disabling of anti-aliasing on the map. Disabling can improve
 performance, but may result in graphics with rougher edges. Changing this
 setting requires restarting the application.
+
+Multi-Pane Cursor Marker Always On
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The multi-pane cursor marker will display when holding down ``CTRL``. When this
+box is checked, this marker will always be displayed.
 
 Show Map Attribution / Logo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -197,12 +203,24 @@ still requires the attribution unless a special license has been granted.
 
 Show Map Center
 ^^^^^^^^^^^^^^^
-
 Display an icon at the center of the map.
+
+Show Range Folding when Smoothing Radar Data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+When smoothing radar data, the transition between range folded values and other
+values can have a strong gradient. To prevent this from occurring, range folding
+is by default hidden while smoothing, but this can be turned back on.
+
+*Range folding hidden*
+
+.. image:: images/settings-general-06-smoothed-range-folding-off.png
+
+*Range folding displayed*
+
+.. image:: images/settings-general-06-smoothed-range-folding-on.png
 
 Update Notifications Enabled
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 Notify the user of updates to Supercell Wx.
 
 Debug Enabled

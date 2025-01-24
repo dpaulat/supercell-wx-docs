@@ -69,6 +69,12 @@ provider's website:
 
 Shortcut: ``s`` or both mouse buttons
 
+Smooth Radar Data
+^^^^^^^^^^^^^^^^^
+
+The **Smooth Radar Data** checkbox will enable radar data smoothing for the
+active map.
+
 Track Location
 ^^^^^^^^^^^^^^
 
