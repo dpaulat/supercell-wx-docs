@@ -22,8 +22,12 @@ dependencies are self-contained.
 Linux Setup
 ^^^^^^^^^^^
 
-*Minimum requirements: Linux/X11 with support for GCC 11 and OpenGL (e.g.,
-Fedora 34+, Ubuntu 22.04+, EndeavourOS, openSUSE Tumbleweed)*
+*Minimum requirements:*
+
+- *x64: Linux/X11 with support for GCC 11 and OpenGL 3.3 (e.g., Fedora 34+,
+  Ubuntu 22.04+, EndeavourOS, openSUSE Tumbleweed)*
+- *arm64: Linux/X11 with with support for GCC 11, OpenGL 3.3 and GLIBC 2.38
+  (e.g., Fedora 39+, Ubuntu 24.04+, EndeavourOS, openSUSE Tumbleweed)*
 
 AppImage
 """"""""
@@ -55,6 +59,23 @@ be installed. In openSUSE, a certificate workaround must be installed.
 
 Once downloaded, untar the application to its own folder, and launch
 supercell-wx from the bin folder.
+
+Arm Architecture Notes
+""""""""""""""""""""""
+
+Many Arm hardware devices do not have full OpenGL 3.3 support. If you experience
+issues running Supercell Wx (OpenGL errors, a blank map pane, strange artifacts,
+or crashing), you may need to set a few environment variables for rendering to
+work properly on your system.
+
+.. code:: bash
+
+  # Explicitly enable rendering using OpenGL 3.3
+  MESA_GL_VERSION_OVERRIDE=3.3
+  MESA_GLSL_VERSION_OVERRIDE=330
+
+  # Force software rendering (only if the above doesn't work, has impact on performance)
+  LIBGL_ALWAYS_SOFTWARE=1
 
 Setup Wizard
 ------------
