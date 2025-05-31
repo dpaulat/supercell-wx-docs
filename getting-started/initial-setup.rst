@@ -88,7 +88,8 @@ The Map Provider page displays first. Here, a map API key must be configured,
 using either `MapTiler <https://www.maptiler.com/>`_ or `Mapbox
 <https://www.mapbox.com/>`_ (specify the desired map provider). After creating
 an account and reviewing terms of service, create an API key (or public token)
-with default scopes (unless one is created for you).
+with default scopes (unless one is created for you). Click the button at the
+right side of the API Key input box to validate your API Key.
 
 .. image:: images/initial-setup-06-wizard-map-provider.png
 
