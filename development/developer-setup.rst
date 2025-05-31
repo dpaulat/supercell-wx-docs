@@ -18,7 +18,7 @@ Required Tools
 - `CMake >= 3.24 <https://cmake.org/download/>`_
 - `Git <https://git-scm.com/download/win>`_
 - `Python >= 3.10 <https://www.python.org/downloads/windows/>`_
-- `Qt 6.8.1 <https://www.qt.io/download-open-source>`_
+- `Qt 6.8.3 <https://www.qt.io/download-open-source>`_
 
   - For Microsoft Visual Studio >= 2022, install Qt for **MSVC 2022 64-bit**
   - For Linux GCC, install Qt for **Desktop gcc 64-bit**
@@ -39,8 +39,8 @@ Required Tools
     .. code:: bash
 
       > pip install --upgrade aqtinstall
-      > aqt install-qt windows desktop 6.8.1 win64_msvc2022_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
-      > aqt install-qt linux desktop 6.8.1 linux_gcc_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
+      > aqt install-qt windows desktop 6.8.3 windows_msvc2022_x64 -m qtimageformats qtmultimedia qtpositioning qtserialport
+      > aqt install-qt linux desktop 6.8.3 linux_gcc_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
 
     - See https://ddalcino.github.io/aqt-list-server/ for additional configurations
 
@@ -66,6 +66,9 @@ cross-platform option.
 For Visual Studio Code, it is recommended to install the following extensions:
 
 - `C/C++ Extension Pack <https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack>`_
+- `clangd <https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd>`_
+- `CMake <https://marketplace.visualstudio.com/items?itemName=twxs.cmake>`_
+- `CMake Tools <https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools>`_
 - `Python <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_
 - `reStructuredText <https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext>`_
 - `reStructuredText Syntax highlighting <https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst>`_
@@ -85,7 +88,7 @@ lighter weight option.
           therefore only recommended for UI development. These issues may have
           since been resolved, but your mileage may vary.
 
-Other IDEs are likely to work as well, however, the following have not been tested:
+Other IDEs are likely to work as well:
 
 - `Code::Blocks <https://www.codeblocks.org/>`_
 - `CLion <https://www.jetbrains.com/clion/>`_
@@ -110,26 +113,103 @@ After cloning the repository from `GitHub <https://github.com/dpaulat/supercell-
 
   > git submodule update --init --recursive
 
-It is recommended to run the initial CMake configure and generate steps via the
-provided setup scripts. View the ``setup-{config}.{ext}`` contents, and make any
-changes required for your environment, including desired build directory and Qt
-path. Alternatively, you can let your IDE configure for you (e.g., Visual Studio
-Code), although ensure you include the proper CMake variables (-D) when
-configuring.
+You are now ready to configure your environment. You can use either CMakePresets
+or pre-generate your build directory (CMake Setup). The choice comes down to
+personal preference, but the CMake Setup scripts tend to be easier using
+Microsoft tools (Visual Studio, Visual Studio Code) on Windows, while other
+tools and platforms benefit from CMakePresets.
 
-.. note:: CMake multi-config (i.e., single build directory for Debug and
-          Release) is currently not supported. While a multi-config workspace
-          will properly generate, some autogeneration tasks do not run as they
-          should, causing linker errors.
+CMake Presets
+^^^^^^^^^^^^^
 
-Using the default setup scripts, CMake will generate Visual Studio solution
-files for Windows, and Ninja build files for Linux. To change this behavior, add
-or modify the ``-G`` parameter with the appropriate CMake generator.
+Run the ``tools/configure-environment.{ext}`` script.
 
-If configuring manually instead of using a provided setup script (e.g., with
-Visual Studio Code on Windows), it is recommended to at least run
-``tools/setup-common.{ext}``. This will ensure Python dependencies are setup
-properly, as well as your conan profile.
+.. code:: text
+
+  Usage:
+    configure-environment.bat [VENV_PATH]
+    configure-environment.sh  [VENV_PATH]
+
+    The configure environment script will setup your Python virtual environment,
+    install Python requirements and install Conan profiles.
+
+    The VENV_PATH argument will specify the Python virtual environment path to
+    use. It defaults to "supercell-wx/.venv/". If you wish to run without a
+    virtual environment, specify "none".
+
+Open ``CMakeLists.txt`` in your favorite editor, select your desired CMake
+Preset, and build the ``supercell-wx`` target.
+
+.. note::
+
+  Visual Studio generates its own additional targets. Ensure the Visual Studio
+  configuration matches the preset selected.
+
+.. note::
+
+  Visual Studio Code on Windows requires running from the *x64 Native Tools
+  Command Prompt for VS 2022*, or updating your shortcut target (e.g.,
+  ``%comspec% /k ""C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat" ^&^& "C:\Users\username\AppData\Local\Programs\Microsoft VS Code\Code.exe""``)
+
+CMake Setup
+^^^^^^^^^^^
+
+Run the ``tools/setup-{config}.{ext}`` script.
+
+.. code:: text
+
+  Usage:
+    setup-{config}.bat [BUILD_DIR] [VENV_PATH]
+    setup-{config}.sh  [BUILD_DIR] [CONAN_PROFILE] [VENV_PATH]
+
+    The setup script will setup your Python virtual environment, install Python
+    requirements, install Conan profiles and dependencies, and run CMake
+    configure.
+
+    The setup script assumes that Qt has been installed to a default directory
+    ("C:\Qt" on Windows, or "/opt/Qt" on Linux). If a custom directory has been
+    used, the script will need modified to reflect the custom installation base.
+
+    The BUILD_DIR argument will specify the CMake build directory to use. You
+    may specify a relative or absolute path. It defaults to
+    "supercell-wx/build-{config}/".
+
+    The CONAN_PROFILE argument will specify the Conan Profile to use. Please
+    select a Conan profile present in "tools/conan/profiles/", appropriate for
+    your compiler and architecture. This argument is only applicable for Linux
+    systems.
+
+    The VENV_PATH argument will specify the Python virtual environment path to
+    use. You may specify a relative or absolute path. It defaults to
+    "supercell-wx/.venv/". If you wish to run without a virtual environment,
+    specify "none".
+
+Depending on the generator, either:
+
+- Open your solution or project files in the build directory (e.g., ``supercell-wx.sln``), or
+- Open the source directory, pointing your editor to the proper build directory
+
+You are ready to build the ``supercell-wx`` target.
+
+Visual Studio Code
+""""""""""""""""""
+
+Open the supercell-wx source directory in Visual Studio Code. Open the Settings
+Window, and filter on CMake. In Workspace settings, set your Build Directory to
+your desired destination.
+
+.. image:: images/developer-setup-02-vscode-cmake-build-dir.png
+
+On the Primary Side Bar (left), select the CMake icon. Under Build, select the
+appropriate Kit (compiler), and set your target to supercell-wx. You can proceed
+to build supercell-wx using the ``Build`` button on the left side of the Status
+Bar.
+
+Troubleshooting
+^^^^^^^^^^^^^^^
+
+Missing Packages (Linux)
+""""""""""""""""""""""""
 
 When configuring on Linux, you may encounter an error due to missing packages
 from your system. These may be installed manually, or you may update your conan
@@ -142,30 +222,12 @@ global configuration (``~/.conan2/global.conf``):
 
 After installing missing packages, re-run the setup script.
 
-.. note:: After updating compiler or Qt versions, you may need to update paths
-          in your CMake cache. This may be done via your IDE, or by manually
-          editing CMakeCache.txt located in your build directory.
+Compiler or Qt Version Issues
+"""""""""""""""""""""""""""""
 
-Visual Studio
-^^^^^^^^^^^^^
-
-When CMake is run with the Visual Studio generator, your build directory will
-contain a ``supercell-wx.sln`` file. Open this in Visual Studio, and proceed to
-build the supercell-wx target.
-
-Visual Studio Code
-^^^^^^^^^^^^^^^^^^
-
-Open the supercell-wx source directory in Visual Studio Code. Open the Settings
-Window, and filter on CMake. In Workspace settings, set your Build Directory to
-your desired destination.
-
-.. image:: images/developer-setup-02-vscode-cmake-build-dir.png
-
-On the Primary Side Bar (left), select the CMake icon. Under Build, select the
-appropriate Kit (compiler), and set your target to supercell-wx. You can proceed
-to build supercell-wx using the ``Build`` button on the left side of the Status
-Bar.
+After updating compiler or Qt versions, you may need to update paths in your
+CMake cache. This may be done via your IDE, rerunning setup scripts, or by
+manually editing ``CMakeCache.txt`` located in your build directory.
 
 Guidelines
 ----------
