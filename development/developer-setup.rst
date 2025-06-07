@@ -119,6 +119,10 @@ personal preference, but the CMake Setup scripts tend to be easier using
 Microsoft tools (Visual Studio, Visual Studio Code) on Windows, while other
 tools and platforms benefit from CMakePresets.
 
+If your environment requires any special setup, such as an alternate compiler
+configuration, you may configure settings in ``tools/lib/user-setup.sh`` (see
+``tools/lib/user-setup.example.sh``).
+
 CMake Presets
 ^^^^^^^^^^^^^
 
@@ -160,7 +164,7 @@ Run the ``tools/setup-{config}.{ext}`` script.
 
   Usage:
     setup-{config}.bat [BUILD_DIR] [VENV_PATH]
-    setup-{config}.sh  [BUILD_DIR] [CONAN_PROFILE] [VENV_PATH]
+    setup-{config}.sh  [BUILD_DIR] [CONAN_PROFILE] [VENV_PATH] [ASAN_ENABLE]
 
     The setup script will setup your Python virtual environment, install Python
     requirements, install Conan profiles and dependencies, and run CMake
@@ -183,6 +187,10 @@ Run the ``tools/setup-{config}.{ext}`` script.
     use. You may specify a relative or absolute path. It defaults to
     "supercell-wx/.venv/". If you wish to run without a virtual environment,
     specify "none".
+
+    The ASAN_ENABLE argument will specify whether or not to enable or disable
+    the address sanitizer. A default value of "disabled" will disable the
+    sanitizer, while any other value will enable it.
 
 Depending on the generator, either:
 
