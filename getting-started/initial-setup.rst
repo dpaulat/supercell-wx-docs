@@ -29,10 +29,49 @@ Linux Setup
 - *arm64: Linux/X11 with with support for GCC 11, OpenGL 3.3 and GLIBC 2.38
   (e.g., Fedora 39+, Ubuntu 24.04+, EndeavourOS, openSUSE Tumbleweed)*
 
+Flatpak
+"""""""
+
+The Linux Flatpak is the preferred way to run Supercell Wx on Linux. It
+runs Supercell Wx in a sandbox and bundles dependencies in order to run on a
+large number of Linux distributions without additional setup requirements.
+
+To get started, download the appropriate file with the .flatpak extension.
+
+.. code:: bash
+
+  # Install Flatpak via your Linux distribution's package manager
+  > dnf install flatpak    # e.g., Fedora
+  > apt install flatpak    # e.g., Ubuntu
+  > zypper install flatpak # e.g., openSUSE
+
+  # Add Flathub remote
+  > flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+  # Install Flatpak dependencies
+  > flatpak install flathub org.freedesktop.Platform/x86_64/23.08  # x64
+  > flatpak install flathub org.freedesktop.Platform/aarch64/23.08 # arm64
+
+  # Install Supercell Wx
+  > flatpak install supercell-wx-<version>-linux-<arch>.flatpak
+
+  # Run Supercell Wx
+  > flatpak run net.supercellwx.app
+
+Alternatively, after installing Supercell Wx, you can now launch the Flatpak
+from the menu.
+
+.. note:: If updating from AppImage or the Binary Release, you will need to
+          migrate your settings manually, as the Flatpak does not have access
+          to the original settings directory.
+
+          | Original path: ``~/.local/share/Supercell Wx/``
+          | New path: ``~/.var/app/net.supercellwx.app/data/Supercell Wx/``
+
 AppImage
 """"""""
 
-The Linux AppImage is the preferred way to run Supercell Wx on Linux. It
+The Linux AppImage is an alternative way to run Supercell Wx on Linux. It
 packages most required dependencies in order to run on a large number of modern
 Linux distributions without additional setup requirements.
 
@@ -76,6 +115,22 @@ work properly on your system.
 
   # Force software rendering (only if the above doesn't work, has impact on performance)
   LIBGL_ALWAYS_SOFTWARE=1
+
+macOS Setup
+^^^^^^^^^^^
+
+*Minimum requirements:*
+
+- *Intel-based Mac: macOS 13.6+*
+- *Apple silicon-based Mac: macOS 14.0+*
+
+Once downloaded, to install the application:
+
+- Mount the Apple Disk Image (.dmg)
+- Drag **Supercell Wx** to **Applications**
+- Unmount and delete the Apple Disk Image
+
+Supercell Wx may now be launched from the Applications folder.
 
 Setup Wizard
 ------------
