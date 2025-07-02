@@ -44,10 +44,10 @@ Required Tools
 
     .. code:: bash
 
-      > python3 pip install --upgrade aqtinstall
-      > aqt install-qt windows desktop 6.8.3 windows_msvc2022_x64 -m qtimageformats qtmultimedia qtpositioning qtserialport
-      > aqt install-qt linux desktop 6.8.3 linux_gcc_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
-      > aqt install-qt mac desktop 6.8.3 clang_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
+      $ python3 pip install --upgrade aqtinstall
+      $ aqt install-qt windows desktop 6.8.3 windows_msvc2022_x64 -m qtimageformats qtmultimedia qtpositioning qtserialport
+      $ aqt install-qt linux desktop 6.8.3 linux_gcc_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
+      $ aqt install-qt mac desktop 6.8.3 clang_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
 
     - See https://ddalcino.github.io/aqt-list-server/ for additional configurations
 
@@ -118,7 +118,7 @@ After cloning the repository from `GitHub <https://github.com/dpaulat/supercell-
 
 .. code:: bash
 
-  > git submodule update --init --recursive
+  $ git submodule update --init --recursive
 
 You are now ready to configure your environment. You can use either CMakePresets
 or pre-generate your build directory (CMake Setup). The choice comes down to

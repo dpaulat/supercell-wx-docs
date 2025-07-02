@@ -41,25 +41,22 @@ To get started, download the appropriate file with the .flatpak extension.
 .. code:: bash
 
   # Install Flatpak via your Linux distribution's package manager
-  > dnf install flatpak    # e.g., Fedora
-  > apt install flatpak    # e.g., Ubuntu
-  > zypper install flatpak # e.g., openSUSE
+  $ dnf install flatpak    # e.g., Fedora
+  $ apt install flatpak    # e.g., Ubuntu
+  $ zypper install flatpak # e.g., openSUSE
+  $ pacman -S flatpak      # e.g., Arch Linux
 
   # Add Flathub remote
-  > flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
-  # Install Flatpak dependencies
-  > flatpak install flathub org.freedesktop.Platform/x86_64/23.08  # x64
-  > flatpak install flathub org.freedesktop.Platform/aarch64/23.08 # arm64
+  $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
   # Install Supercell Wx
-  > flatpak install supercell-wx-<version>-linux-<arch>.flatpak
+  $ flatpak install supercell-wx-<version>-linux-<arch>.flatpak
 
   # Run Supercell Wx
-  > flatpak run net.supercellwx.app
+  $ flatpak run net.supercellwx.app
 
-Alternatively, after installing Supercell Wx, you can now launch the Flatpak
-from the menu.
+Alternatively, after installing the Supercell Wx Flatpak, you can now run the
+program from the desktop environment's applications menu.
 
 .. note:: If updating from AppImage or the Binary Release, you will need to
           migrate your settings manually, as the Flatpak does not have access
@@ -92,9 +89,9 @@ be installed. In openSUSE, a certificate workaround must be installed.
 
 .. code:: bash
 
-  > dnf install xcb-util-cursor                # e.g., Fedora
-  > apt install libxcb-cursor0                 # e.g., Ubuntu
-  > zypper install ca-certificates-steamtricks # e.g., openSUSE
+  $ dnf install xcb-util-cursor                # e.g., Fedora
+  $ apt install libxcb-cursor0                 # e.g., Ubuntu
+  $ zypper install ca-certificates-steamtricks # e.g., openSUSE
 
 Once downloaded, untar the application to its own folder, and launch
 supercell-wx from the bin folder.
