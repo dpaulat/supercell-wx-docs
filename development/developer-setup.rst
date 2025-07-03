@@ -45,7 +45,7 @@ Required Tools
     .. code:: bash
 
       $ python3 pip install --upgrade aqtinstall
-      $ aqt install-qt windows desktop 6.8.3 windows_msvc2022_x64 -m qtimageformats qtmultimedia qtpositioning qtserialport
+      $ aqt install-qt windows desktop 6.8.3 win64_msvc2022_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
       $ aqt install-qt linux desktop 6.8.3 linux_gcc_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
       $ aqt install-qt mac desktop 6.8.3 clang_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
 
