@@ -27,6 +27,7 @@ See the development roadmap for details.
    user-guide/layer-manager
    user-guide/location-marker-manager
    user-guide/placefile-manager
+   user-guide/placefile-specification
    user-guide/radar-toolbox
    user-guide/settings
 
