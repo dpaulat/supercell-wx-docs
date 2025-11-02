@@ -48,8 +48,18 @@ Will my computer run Supercell Wx?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Minimum requirements:
 
-- Windows 10 (1809 or later), Windows 11
-- Linux/X11 with support for GCC 11 (e.g., Fedora 34+, Ubuntu 22.04+, EndeavourOS, openSUSE Tumbleweed)
+- Windows 10 (1809 or later)
+- Windows 11
+- Linux
+  - Arch Linux (EndeavourOS, SteamOS [Steam Deck], and other Arch derivatives)
+  - Fedora Linux 34+
+  - openSUSE Tumbleweed
+  - Ubuntu 22.04+
+  - NixOS 25.05+
+  - Most distributions supporting the GCC Standard C++ Library 11+
+- macOS
+  - 15.0+ for Intel-based Macs
+  - 14.0+ for Apple silicon-based Macs
 - OpenGL 3.3
 
 How do I install and set up Supercell Wx?
@@ -70,8 +80,8 @@ What is planned for Supercell Wx? I have a suggestion or feature request.
 
 Help! My map is blank even after I added MapTiler.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-There may be a blank space before or after your API key. Remove any spaces and
-restart the app.
+There may be a blank space before or after your API key. Please verify your API
+key with the mapping service you have selected, or generate a new API key.
 
 How can I contribute?
 ~~~~~~~~~~~~~~~~~~~~~
