@@ -58,7 +58,7 @@ Sets the default color of subsequent Place statements. The default color is whit
 :blue: Blue color component (0-255)
 :alpha: *(optional)* Alpha color component (0-255)
 
-When in HSLuv mode, instead of RGBA, HSL components are used instead.
+When in HSLuv mode, HSL components are used instead of RGBA.
 
 :hue: Hue component
 :saturation: Saturation component
@@ -146,7 +146,7 @@ Sets the modulate color of subsequent Icon statements. The default modulate colo
 :blue: Blue color component (0-255)
 :alpha: *(optional)* Alpha color component (0-255)
 
-When in HSLuv mode, instead of RGBA, HSL components are used instead.
+When in HSLuv mode, HSL components are used instead of RGBA.
 
 :hue: Hue component
 :saturation: Saturation component
@@ -257,7 +257,7 @@ Triangles
 
 The Triangles statement draws triangles from groups of three color vertices. Vertex colors are smoothly interpolated across the triangle faces.
 
-When in HSLuv mode, instead of RGBA, HSL components are used instead.
+When in HSLuv mode, HSL components are used instead of RGBA.
 
 :hue: Hue component
 :saturation: Saturation component
