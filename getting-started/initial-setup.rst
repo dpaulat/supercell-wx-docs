@@ -118,7 +118,7 @@ macOS Setup
 
 *Minimum requirements:*
 
-- *Intel-based Mac: macOS 13.6+*
+- *Intel-based Mac: macOS 15.0+*
 - *Apple silicon-based Mac: macOS 14.0+*
 
 Once downloaded, to install the application:
