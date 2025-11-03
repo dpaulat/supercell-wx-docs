@@ -126,6 +126,27 @@ layer name specified here (in regular expression format), and all higher
 priority layers become the Map Symbology. Layers underneath this become the Map
 Underlay.
 
+Screen Capture Folder
+^^^^^^^^^^^^^^^^^^^^^
+Sets the default folder for a screen capture.
+
+Screen Capture Name
+^^^^^^^^^^^^^^^^^^^
+Sets the default filename for a screen capture, without the file extension.
+Parameters can be given to customize the filename based on the state of the map,
+each enclosed within a pair of curly braces (``{}``).
+
+:site: Radar site being captured
+:product: Product name being captured
+:timestamp: Scan time for the screen capture. Can specify a C++ or fmt format string (e.g., ``{timestamp:%Y%m%dT%H%M%SZ}``)
+:lat: Latitude of the map
+:lon: Longitude of the map
+:zoom: Zoom level of the map
+:width: Width of the map in pixels
+:height: Height of the map in pixels
+
+Default value: ``{site}_{product}_{timestamp:%Y%m%dT%H%M%SZ}_{lat}_{lon}_{zoom}_{width}x{height}``
+
 Theme
 ^^^^^
 **Default** will select the default Qt theme for the operating system being used.
