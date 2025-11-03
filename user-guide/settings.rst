@@ -263,6 +263,25 @@ the appearance of the line further.
 
 .. image:: images/settings-palette-03-edit-line.png
 
+Radar Site Status
+^^^^^^^^^^^^^^^^^
+
+Radar sites are colored on the map based on their operational status. Status and
+default colors indicate:
+
+:Up (Green): Data received within last 5 minutes
+:Warning (Yellow): Data received more than 5 minutes ago
+:Down (Red): Data received more than 30 minutes ago
+:High Latency (Orange): Data took more than 60 seconds to arrive
+:Unknown (Blue): No radar site status available
+
+.. image:: images/settings-palette-04-radar-site-status.png
+
+Use the text boxes to specify colors in ARGB hexadecimal format (#aarrggbb),
+or use the color pickers to select a color. Preview the button by hovering.
+
+.. image:: images/settings-palette-05-edit-button.png
+
 Units
 -----
 
