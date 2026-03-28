@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Supercell Wx'
-copyright = '2021-2025, Dan Paulat'
+copyright = '2021-2026, Dan Paulat'
 author = 'Dan Paulat'
 
 # -- General configuration ---------------------------------------------------

@@ -148,10 +148,10 @@ right side of the API Key input box to validate your API Key.
 .. note:: Both MapTiler and Mapbox offer free tiers. At the time of writing,
           Mapbox requires a credit card for sign-up, while MapTiler does not.
 
-.. note:: Future releases will add a basic map when no map source is configured.
+.. note:: A blank map is used when no map source is configured.
 
 Next, the Map Layout page displays. Here, the default display of a single map
-can be changed. The Map Layout can be configured as large as a 2x2 grid.
+can be changed. The Map Layout can be configured as large as a 3x3 grid.
 
 .. image:: images/initial-setup-07-wizard-map-layout.png
 
@@ -169,9 +169,9 @@ Using the menu, navigate to the Settings window using **File > Settings**.
 .. image:: images/initial-setup-02-initial-settings-small.png
 
 Additional options can be configured in the Settings dialog as desired. Once
-complete, press **OK** and restart the application.
+complete, press **OK** and verify the map style in the Radar Toolbox.
 
-.. note:: Most settings changes require a restart of the application to take
+.. note:: Some settings changes require a restart of the application to take
           effect. Future releases will improve this behavior.
 
 Now that the application has been configured, it is ready for use.

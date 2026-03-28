@@ -44,7 +44,7 @@ Grid Width and Height
 ^^^^^^^^^^^^^^^^^^^^^
 These settings allow multiple radar products to be viewed simultaneously.
 Changing  Grid Width will create panes side by side, while Grid Height will
-create panes top and bottom. The maximum value for both is two.
+create panes top and bottom. The maximum value for both is three.
 
 *Layout with a Grid Width of 2 and a Grid Height of 1*
 
@@ -388,6 +388,12 @@ All
 With the **All** location method, alert audio notifications will be played for
 any location.
 
+Master Volume
+^^^^^^^^^^^^^
+
+The master volume slider allows the user to adjust the volume of all alert audio
+notifications.
+
 Text
 ----
 
@@ -399,9 +405,8 @@ to adjust the font and style to the user's liking.
 Choosing the font
 ^^^^^^^^^^^^^^^^^^
 
-The user can select the font they'd like to use by choosing either the default
-display item or the tooltip display item, and then hitting the 3 dots next to
-the font name.
+The user can select a font by choosing the desired display item, and then
+pressing the button with 3 dots next to the font name.
 
 .. image:: images/settings-text-02-select-font.png
 

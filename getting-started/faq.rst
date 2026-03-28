@@ -80,8 +80,9 @@ What is planned for Supercell Wx? I have a suggestion or feature request.
 
 Help! My map is blank even after I added MapTiler.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-There may be a blank space before or after your API key. Please verify your API
-key with the mapping service you have selected, or generate a new API key.
+Please verify your API key with the mapping service you have selected, or
+generate a new API key. You may need to toggle the map style if the style has
+reset to None.
 
 How can I contribute?
 ~~~~~~~~~~~~~~~~~~~~~

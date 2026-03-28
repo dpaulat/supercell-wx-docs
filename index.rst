@@ -24,6 +24,7 @@ See the development roadmap for details.
    :caption: User Guide
    :name: sec-user-guide
 
+   user-guide/command-line-options
    user-guide/layer-manager
    user-guide/location-marker-manager
    user-guide/placefile-manager
