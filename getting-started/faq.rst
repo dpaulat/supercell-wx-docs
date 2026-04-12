@@ -81,8 +81,7 @@ What is planned for Supercell Wx? I have a suggestion or feature request.
 Help! My map is blank even after I added MapTiler.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Please verify your API key with the mapping service you have selected, or
-generate a new API key. You may need to toggle the map style if the style has
-reset to None.
+generate a new API key.
 
 How can I contribute?
 ~~~~~~~~~~~~~~~~~~~~~
