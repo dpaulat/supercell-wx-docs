@@ -27,6 +27,8 @@ See the development roadmap for details.
    user-guide/command-line-options
    user-guide/layer-manager
    user-guide/location-marker-manager
+   user-guide/map-drawing
+   user-guide/map-layout
    user-guide/placefile-manager
    user-guide/placefile-specification
    user-guide/radar-toolbox

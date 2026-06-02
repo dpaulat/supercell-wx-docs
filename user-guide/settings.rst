@@ -14,7 +14,8 @@ button in the lower left corner.
 Individual settings can be restored to their default with the circle arrow
 button beside the respective setting.
 
-.. note:: Most settings will require reloading the application to take effect.
+.. note:: Some settings will require reloading the application to take effect
+   (for example **Anti-Aliasing Enabled**).
 
 General
 -------
@@ -43,8 +44,10 @@ time zone, or UTC.
 Grid Width and Height
 ^^^^^^^^^^^^^^^^^^^^^
 These settings allow multiple radar products to be viewed simultaneously.
-Changing  Grid Width will create panes side by side, while Grid Height will
-create panes top and bottom. The maximum value for both is three.
+Changing Grid Width will create panes side by side, while Grid Height will
+create panes top and bottom. The maximum value for both is three (up to nine
+panes). See :doc:`map-layout` for **Link view**, **Pop-out**, and layout
+persistence per pane.
 
 *Layout with a Grid Width of 2 and a Grid Height of 1*
 
@@ -76,11 +79,12 @@ to serve NMEA data.
 
 Map Provider
 ^^^^^^^^^^^^
-Select the provider for the map underlays. Currently Mapbox and MapTiler are
-supported. 
+Select the provider for the map underlays. **Mapbox**, **MapTiler**, and
+**OpenFreeMap** are supported. OpenFreeMap is free, open source, and does not
+require an account or API key.
 
 .. note:: The map types available on the Map Style dropdown in the Radar Toolbox
-    will depend on the selected map provider. 
+    will depend on the selected map provider.
 
 Mapbox API Key
 ^^^^^^^^^^^^^^
@@ -94,8 +98,8 @@ API keys can be found `on the account API Keys page
 
 Custom Map URL
 ^^^^^^^^^^^^^^
-URL for a custom map style. This can be a map from either Mapbox Studio or
-MapTiler Cloud.
+URL for a custom map style. This can be a map from Mapbox Studio, MapTiler Cloud,
+or a local/custom OpenFreeMap style JSON file.
 
 A Mapbox map URL has the format: ``mapbox://styles/<username>/<id>``. This is
 labeled as the **Style URL** in Mapbox Studio.
@@ -104,6 +108,12 @@ A MapTiler map URL typically has the format:
 ``https://api.maptiler.com/maps/<id>/style.json``. This is labeled as **Vector
 Style** in MapTiler Cloud. Note the ``?key=...`` suffix must be removed from the
 URL string.
+
+When **OpenFreeMap** is the map provider, use the folder button beside **Custom
+Map URL** to choose a ``.json`` style file on disk, or paste a URL to a style
+JSON (see `OpenFreeMap custom styles
+<https://openfreemap.org/quick_start/#custom-styles>`_). On Windows and macOS,
+``file:///`` URLs for local styles should work; use the file picker when possible.
 
 When modifying a style, you may need to close Supercell Wx, delete the cache,
 and re-open the application. On Windows, the cache is a ``.db`` file located at
@@ -149,6 +159,9 @@ Default value: ``{site}_{product}_{timestamp:%Y%m%dT%H%M%SZ}_{lat}_{lon}_{zoom}_
 
 Theme
 ^^^^^
+The selected theme is applied when you press **OK** in the Settings dialog; a
+restart is not required.
+
 **Default** will select the default Qt theme for the operating system being used.
 For Windows, this is the *Windows Vista* style, and for Linux, this is the
 *Fusion* style. This typically gives a native look-and-feel consistent with the
@@ -218,9 +231,12 @@ If you have permission to hide map attribution, these selections allow you to do
 so. At the time of writing, Mapbox does not advertise permission to hide
 attribution. MapTiler allows hiding of the logo for paid subscriptions, but
 still requires the attribution unless a special license has been granted.
+OpenFreeMap styles include attribution in the map data; follow the provider's
+terms when changing visibility.
 
 - `Mapbox Attribution Guidelines <https://docs.mapbox.com/help/dive-deeper/attribution/>`_
 - `MapTiler Attribution Guidelines <https://documentation.maptiler.com/hc/en-us/articles/4405445885457-How-to-add-MapTiler-attribution-to-a-map>`_
+- `OpenFreeMap <https://openfreemap.org/>`_
 
 Show Map Center
 ^^^^^^^^^^^^^^^

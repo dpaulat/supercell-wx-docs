@@ -136,17 +136,29 @@ The first time the application is launched, a setup wizard will appear. Follow
 the instructions displayed on the screen to configure the application for first
 use.
 
-The Map Provider page displays first. Here, a map API key must be configured,
-using either `MapTiler <https://www.maptiler.com/>`_ or `Mapbox
-<https://www.mapbox.com/>`_ (specify the desired map provider). After creating
-an account and reviewing terms of service, create an API key (or public token)
-with default scopes (unless one is created for you). Click the button at the
-right side of the API Key input box to validate your API Key.
+The Map Provider page displays first. Choose **Mapbox**, **MapTiler**, or
+**OpenFreeMap**.
 
-.. image:: images/initial-setup-06-wizard-map-provider.png
+For **Mapbox** or **MapTiler**, enter an API key after creating an account and
+reviewing terms of service. Create an API key (or public token) with default
+scopes (unless one is created for you). Click the button at the right side of the
+API Key input box to validate your API Key.
+
+For **OpenFreeMap**, no API key is required. You can continue immediately or use
+**Visit OpenFreeMap** to read about free tiles and custom styles.
+
+.. figure:: images/initial-setup-06-wizard-map-provider.png
+   :alt: Setup wizard Map Provider page
+
+.. figure:: images/initial-setup-06-wizard-map-provider-ofm.png
+   :alt: Setup wizard Map Provider page (OpenFreeMap)
+
+   Setup wizard **Map Provider** page (Mapbox/MapTiler with API key, or
+   **OpenFreeMap** with no API key).
 
 .. note:: Both MapTiler and Mapbox offer free tiers. At the time of writing,
           Mapbox requires a credit card for sign-up, while MapTiler does not.
+          OpenFreeMap is free and does not require sign-up.
 
 .. note:: A blank map is used when no map source is configured.
 
@@ -171,8 +183,8 @@ Using the menu, navigate to the Settings window using **File > Settings**.
 Additional options can be configured in the Settings dialog as desired. Once
 complete, press **OK** and verify the map style in the Radar Toolbox.
 
-.. note:: Some settings changes require a restart of the application to take
-          effect. Future releases will improve this behavior.
+.. note:: Some settings changes will require a restart (for example
+          anti-aliasing).
 
 Now that the application has been configured, it is ready for use.
 
@@ -185,12 +197,16 @@ Supercell Wx uses `MapLibre Native Qt
 <https://github.com/maplibre/maplibre-native-qt>`_ to render a responsive map.
 
 To pan the map, left-click and drag the mouse. To rotate the map, right-click
-and drag the mouse. To reset the rotation to a north-up orientation, left-click
-the compass icon in the upper right corner of the map. Use the mouse wheel to
-zoom, or double click using the left or right mouse button to zoom in or out
-respectively. Pressing ``z`` (configurable via hotkey settings) or both left and
-right mouse buttons will cycle through map styles, including light, dark and
-satellite underlays.
+and drag the mouse; rotation starts only after the pointer moves past the
+system drag threshold, so a click without movement does not change bearing. To
+reset the rotation to a north-up orientation, left-click the compass icon in the
+upper right corner of the map. Use the mouse wheel to zoom, or double click using
+the left or right mouse button to zoom in or out respectively. Pressing ``z``
+(configurable via hotkey settings) or both left and right mouse buttons will
+cycle through map styles, including light, dark and satellite underlays.
+
+Right-click a map pane for **Link view** (more than one pane), **Pop-out**, and
+**Draw**. See :doc:`../user-guide/map-layout` and :doc:`../user-guide/map-drawing`.
 
 For more information about the displayed radar product, hover over the time in
 the upper right of the map. Hold the ``SHIFT`` key to view radar moment data or

@@ -11,7 +11,9 @@ Radar Site
 ^^^^^^^^^^
 
 The Radar Site section shows the currently active radar site for the selected
-map, along with the site's location.
+map, along with the site's location. When no site is selected, the toolbox shows
+no site and the range ring is hidden; placefiles and other map layers can remain
+visible.
 
 .. image:: images/radar-toolbox-01-radar-site.png
 
@@ -25,6 +27,16 @@ location, type, and distance from the current location. Clicking the far-right
 column to add or remove a star icon will toggle the site as a preset.
 Double-clicking a site or pressing OK will pan the map and load radar data for
 the new site.
+
+To clear the active radar site, press **None** in the dialog, or click the
+currently selected site again on the map (**Radar Sites** layer enabled). The map
+stays at the current view; only radar products and the range ring are cleared.
+
+.. figure:: images/radar-toolbox-01-radar-site-deselected.png
+   :alt: Map with no radar site selected
+
+   Map after deselecting a site (no range ring, no radar overlay; placefiles may
+   still show).
 
 .. note:: If the new site does not have the same radar products available as the
           previously selected site, an alternate radar product may need to be
@@ -57,12 +69,14 @@ Map Style
 ^^^^^^^^^
 
 The Map Style dropdown will display a list of the available map styles for the
-selected map provider (e.g., Mapbox or MapTiler). Selecting a style will update
-the active map. For details on the available map types, see the selected map
+selected map provider (Mapbox, MapTiler, or OpenFreeMap). Selecting a style will
+update the active map. **None** removes the vector underlay while keeping radar
+and other overlays. For details on the available map types, see the selected map
 provider's website:
 
 - Mapbox: https://www.mapbox.com/gallery/
 - MapTiler: https://cloud.maptiler.com/maps/ (requires login)
+- OpenFreeMap: https://openfreemap.org/
 
 .. note:: Not all map styles visible on the map provider's website are available
           within Supercell Wx, as new map styles are added on a regular basis.
@@ -187,6 +201,26 @@ the atmosphere. Each Level 2 product in Supercell Wx will give you this ability.
 
 For more information about elevation, visit https://www.noaa.gov/jetstream/vcp_max.
 
+Level 2 Settings
+^^^^^^^^^^^^^^^^
+
+When a Level 2 product with a color table is active, the **Level 2 Settings**
+section appears in the Radar Toolbox. Besides elevation selection, it includes an
+optional **Threshold** control for the color table.
+
+Enable **Enable Threshold** to filter the display to values at or above the
+threshold. Adjust the value with the slider or type a number in the value field
+(units appear beside the field). Press Enter or leave the field to apply a typed
+value. The slider and text field stay in sync when you change units or range from
+the map; while you are editing the text field, live map updates do not overwrite
+your entry until you finish editing.
+
+.. figure:: images/radar-toolbox-02-level2-threshold.png
+   :alt: Level 2 Settings threshold controls
+
+   **Level 2 Settings** with **Enable Threshold** on, slider, and editable
+   threshold value.
+
 Level 3
 ^^^^^^^^^
 
@@ -226,6 +260,19 @@ Tilt Selection
 """"""""""""""
 
 .. image:: images/radar-toolbox-04-level3-tilt.png
+
+Level 3 Settings
+^^^^^^^^^^^^^^^^
+
+When a Level 3 product with a color table is active, the **Level 3 Settings**
+section appears in the Radar Toolbox. It provides the same **Threshold** controls
+as Level 2 Settings: slider, units label, and a text field for direct numeric
+entry.
+
+.. figure:: images/radar-toolbox-04-level3-threshold.png
+   :alt: Level 3 Settings threshold controls
+
+   **Level 3 Settings** threshold row with typed value and units.
 
 Timeline
 --------

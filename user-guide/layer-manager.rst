@@ -26,14 +26,14 @@ Hiding a layer from display
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Layer Manager will allow the user to hide a chosen layer from display.
-Depending upon how many grid panels the user has open (a total of 4), the user
-may hide the chosen layer using the checkboxes next to each layer. Checkboxes 1
-& 2 would be the top two grid panels in a panel of 4, and 3 & 4 would be the
-bottom two panels.
+Depending upon how many map panes are in the grid (up to nine, from **Grid
+Width** and **Grid Height** in Settings), the user may hide the chosen layer
+using the checkboxes next to each layer. Checkbox numbers match pane order in
+the grid (left-to-right, top-to-bottom).
 
 .. note:: Unchecking a layer in the Layer Manager does not disable placefiles.
           If a user wishes to disable a placefile, they may do so in the
-          placefile manager.
+          Placefile Manager.
 
 .. image:: images/layer-manager-03-grid.png
 
@@ -58,7 +58,7 @@ Other mentions
 
 The Layer Manager gives the user not only the ability to hide placefiles, but
 also hide Range Rings, Radar Data, Alerts, Color Table, and the Map Overlay from
-any of the 1-4 grid panels.
+individual grid panes.
 
 Some layers are not adjustable by design, such as the Map Overlay, Color Table,
 Map Symbology, and the Map Underlay.
