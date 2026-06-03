@@ -60,10 +60,11 @@ in **Settings** as before.
 Resetting Layout
 ----------------
 
-Use **Panes > Recreate Map Layout** (or the equivalent action in the map context
+Use **Panes > Reset Map Layout** (or the equivalent action in the map context
 menu when a pane is popped out) to rebuild the grid from current **Grid Width**
-and **Grid Height** settings. This does not change saved link flags, but
-recreates pane widgets from the configured grid dimensions.
+and **Grid Height** settings, and reset selected products to default. This does
+not change saved link flags, but recreates pane widgets from the configured grid
+dimensions.
 
 Map Controls
 ------------
