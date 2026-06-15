@@ -23,7 +23,7 @@ Required Tools
 - `CMake >= 4.2.0 <https://cmake.org/download/>`_
 - `Git <https://git-scm.com/download/win>`_
 - `Python >= 3.10 <https://www.python.org/downloads/windows/>`_
-- `Qt 6.11.0 <https://www.qt.io/download-open-source>`_
+- `Qt 6.11.1 <https://www.qt.io/download-open-source>`_
 
   - For Microsoft Visual Studio >= 2022, install Qt for **MSVC 2022 64-bit**
   - For Linux GCC, install Qt for **Desktop gcc 64-bit**
@@ -38,16 +38,16 @@ Required Tools
     .. image:: images/developer-setup-01-qt-install-small.png
 
   - See setup-* scripts for current version
-  - Add the ``bin`` directory to your system ``PATH`` variable (e.g., ``C:\Qt\6.11.0\msvc2022_64\bin``)
+  - Add the ``bin`` directory to your system ``PATH`` variable (e.g., ``C:\Qt\6.11.1\msvc2022_64\bin``)
   - Alternate install via aqtinstall (installs to a versioned subdirectory
     within the current directory)
 
     .. code:: bash
 
       $ python3 pip install --upgrade aqtinstall
-      $ aqt install-qt windows desktop 6.11.0 win64_msvc2022_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
-      $ aqt install-qt linux desktop 6.11.0 linux_gcc_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
-      $ aqt install-qt mac desktop 6.11.0 clang_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
+      $ aqt install-qt windows desktop 6.11.1 win64_msvc2022_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
+      $ aqt install-qt linux desktop 6.11.1 linux_gcc_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
+      $ aqt install-qt mac desktop 6.11.1 clang_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
 
     - See https://ddalcino.github.io/aqt-list-server/ for additional configurations
 
