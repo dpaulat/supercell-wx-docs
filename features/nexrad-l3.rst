@@ -3,6 +3,13 @@ NEXRAD Level 3
 
 Supercell Wx supports many NEXRAD Level 3 products. The majority of products are
 loaded by the application, although some don't yet have rendering capabilities.
+
+By default, Level 3 data is downloaded from AWS S3. Alternate sources,
+including ONDAS HTTP servers, NWS TGFTP, and custom S3 buckets, can be
+selected with the ``--level3-provider`` command line option or the
+``SCWX_LEVEL3_DATA_PROVIDER_URL`` environment variable. See
+:doc:`../user-guide/command-line-options` for supported URL formats and examples.
+
 The table below indicates the level of support for each product. Each product is
 defined in detail within Interface Control Documents published by the National
 Weather Service:

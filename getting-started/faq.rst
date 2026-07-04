@@ -123,6 +123,14 @@ How do I see the specific values in a location?
 Hold `SHIFT` and mouse over the location for the value related to the product you
 have selected.
 
+Can I use an alternate radar data source?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Yes. By default, Supercell Wx downloads NEXRAD data from AWS S3. To use an
+alternate source — such as the Iowa State Mesonet or NWS TGFTP — pass
+``--level2-provider`` and/or ``--level3-provider`` when launching the
+application. See :doc:`../user-guide/command-line-options` for supported URL
+formats and examples.
+
 How can I change the colors of the radar products?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **File > Settings > Palettes**
