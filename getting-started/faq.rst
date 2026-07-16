@@ -42,7 +42,9 @@ are welcome!
 
 Where can I get the latest version?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-https://github.com/dpaulat/supercell-wx/releases
+- Releases: https://supercellwx.net/
+- Linux Flatpak remote (recommended): see
+  :doc:`initial-setup` (stable and nightly remotes)
 
 Will my computer run Supercell Wx?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

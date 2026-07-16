@@ -50,4 +50,5 @@ See the development roadmap for details.
    Roadmap <https://github.com/users/dpaulat/projects/2/views/2>
    development/developer-setup
    development/development-snapshots
+   development/flatpak-repo-hosting
    development/faq
