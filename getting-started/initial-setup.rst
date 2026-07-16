@@ -36,7 +36,8 @@ The Linux Flatpak is the preferred way to run Supercell Wx on Linux. It
 runs Supercell Wx in a sandbox and bundles dependencies in order to run on a
 large number of Linux distributions without additional setup requirements.
 
-To get started, download the appropriate file with the .flatpak extension.
+Install from the hosted Flatpak remote (recommended). Updates are then handled
+with ``flatpak update``.
 
 .. code:: bash
 
@@ -46,17 +47,56 @@ To get started, download the appropriate file with the .flatpak extension.
   $ zypper install flatpak # e.g., openSUSE
   $ pacman -S flatpak      # e.g., Arch Linux
 
-  # Add Flathub remote
+  # Add Flathub remote (provides the Freedesktop runtime)
   $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+  # Add the Supercell Wx remote (stable by default)
+  $ flatpak remote-add --if-not-exists supercell-wx \
+      https://dpaulat.github.io/supercell-wx/supercell-wx.flatpakrepo
+
   # Install Supercell Wx
-  $ flatpak install supercell-wx-<version>-linux-<arch>.flatpak
+  $ flatpak install supercell-wx net.supercellwx.app
 
   # Run Supercell Wx
   $ flatpak run net.supercellwx.app
 
-Alternatively, after installing the Supercell Wx Flatpak, you can now run the
+  # Later: update to the latest stable build
+  $ flatpak update
+
+Alternatively, after installing the Supercell Wx Flatpak, you can run the
 program from the desktop environment's applications menu.
+
+Nightly builds
+''''''''''''''
+
+To track development builds from the ``develop`` branch, add the nightly
+remote (same repository URL, default branch ``nightly``) and install or
+switch to that branch:
+
+.. code:: bash
+
+  $ flatpak remote-add --if-not-exists supercell-wx-nightly \
+      https://dpaulat.github.io/supercell-wx/supercell-wx-nightly.flatpakrepo
+
+  $ flatpak install supercell-wx-nightly net.supercellwx.app//nightly
+
+  # Or, if you already have the stable remote and want the nightly branch:
+  $ flatpak install supercell-wx net.supercellwx.app//nightly
+
+See :doc:`../development/development-snapshots` for other ways to try
+in-progress builds.
+
+Manual ``.flatpak`` install (optional)
+''''''''''''''''''''''''''''''''''''''
+
+``.flatpak`` bundles are still published with each
+`GitHub Release <https://github.com/dpaulat/supercell-wx/releases>`_ for
+offline or one-shot installs. Prefer the remote above when you want automatic
+updates.
+
+.. code:: bash
+
+  $ flatpak install supercell-wx-<version>-linux-<arch>.flatpak
 
 .. note:: If updating from AppImage or the Binary Release, you will need to
           migrate your settings manually, as the Flatpak does not have access

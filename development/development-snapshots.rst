@@ -4,9 +4,43 @@ Development Snapshots
 Development snapshots are the fastest way to try new features that have been
 merged and validated in CI, without replacing your stable installed release.
 
-Snapshots are published as build artifacts from the CI workflow:
+Linux Flatpak nightly remote (recommended on Linux)
+---------------------------------------------------
+
+On Linux, the preferred way to track ``develop`` builds is the hosted Flatpak
+**nightly** remote. Nightlies are published after successful CI runs on
+``develop`` (``x86_64`` and ``aarch64``). No GitHub account is required, and
+updates use the normal Flatpak workflow:
+
+.. code:: bash
+
+  # Flathub is still required for the Freedesktop runtime
+  $ flatpak remote-add --if-not-exists flathub \
+      https://flathub.org/repo/flathub.flatpakrepo
+
+  $ flatpak remote-add --if-not-exists supercell-wx-nightly \
+      https://dpaulat.github.io/supercell-wx/supercell-wx-nightly.flatpakrepo
+
+  $ flatpak install supercell-wx-nightly net.supercellwx.app//nightly
+
+  $ flatpak update
+
+Stable installs use the main remote
+(``https://dpaulat.github.io/supercell-wx/supercell-wx.flatpakrepo``) with
+default branch ``stable``. See :doc:`../getting-started/initial-setup` for
+full Flatpak setup.
+
+CI workflow artifacts
+---------------------
+
+For other platforms, specific PR/feature branches, or one-off Flatpak
+bundles, download build artifacts from the CI workflow:
 
 `supercell-wx CI workflow <https://github.com/dpaulat/supercell-wx/actions/workflows/ci.yml>`_
+
+A GitHub account is required to download workflow artifacts. Prefer the
+nightly Flatpak remote above when you only need the latest ``develop`` Linux
+build.
 
 Prerequisites
 -------------
@@ -22,6 +56,11 @@ For development testing, use the platform binary artifact (for example,
 
 The installer artifact (``supercell-wx-installer-windows-vs2026-x64``)
 installs over your release version and can replace your stable install.
+
+Linux Flatpak artifacts from CI remain useful for offline installs or testing
+a build that is not yet (or never) published to the nightly remote (for
+example, a feature branch). Prefer the nightly remote for routine ``develop``
+testing.
 
 How to Download a Snapshot
 --------------------------
@@ -98,4 +137,9 @@ Troubleshooting
 * Artifact download option missing:
   Sign in to GitHub, then reload the run summary page.
 * Unsure which build to use:
-  Start with ``develop`` and pick the binary artifact for your platform.
+  On Linux, use the nightly Flatpak remote for the latest ``develop`` build.
+  Otherwise start with ``develop`` and pick the binary artifact for your
+  platform.
+* Need a specific PR or feature-branch Flatpak:
+  Use the CI Flatpak artifact for that run; nightlies are published from
+  ``develop`` only.
