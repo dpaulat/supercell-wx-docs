@@ -12,12 +12,20 @@ Windows Setup
 
 *Minimum requirements: Windows 10 (1809 or later), Windows 11*
 
-Once downloaded, unzip the application to its own folder, and launch
-supercell-wx.exe from the bin folder. No installation is required, and all
-dependencies are self-contained.
+**Installer (recommended):** Download ``supercell-wx-v*-windows-x64.exe`` and run
+it. The NSIS bootstrapper quietly installs the Visual C++ Redistributable, then
+installs Supercell Wx via the MSI. You can choose the install folder during
+setup. Afterward, Add/Remove Programs is owned by the MSI (not the ``.exe``).
 
-.. note:: Installation of the Microsoft Visual C++ Redistributable may be
-          required, provided in the bin folder (vc_redist.x64.exe).
+**MSI:** ``supercell-wx-v*-windows-x64.msi`` is also published for environments
+that require an MSI (including the in-app updater). The MSI does not install the
+Visual C++ Redistributable; use the ``.exe`` installer when that is required.
+
+**Portable zip:** Unzip the application to its own folder, and launch
+supercell-wx.exe from the bin folder. No installation is required. The Microsoft
+Visual C++ Redistributable may still be required if it is not already installed
+on the system
+(https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist).
 
 Linux Setup
 ^^^^^^^^^^^

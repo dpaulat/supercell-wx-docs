@@ -55,7 +55,8 @@ For development testing, use the platform binary artifact (for example,
 ``supercell-wx-windows-vs2026-x64``) instead of the installer artifact.
 
 The installer artifact (``supercell-wx-installer-windows-vs2026-x64``)
-installs over your release version and can replace your stable install.
+contains both the ``.exe`` NSIS bootstrapper and the ``.msi``. It installs
+over your release version and can replace your stable install.
 
 Linux Flatpak artifacts from CI remain useful for offline installs or testing
 a build that is not yet (or never) published to the nightly remote (for
