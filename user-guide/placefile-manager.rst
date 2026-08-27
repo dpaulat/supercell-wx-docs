@@ -89,5 +89,5 @@ Free
 
 Paid
 ----
-* AllisonHouse: https://www.allisonhouse.com/
+* WeatherPulse: https://www.weatherpulse.com/
 * Josh3D: http://www.josh3d.com/weather/plan/placefiles.php
