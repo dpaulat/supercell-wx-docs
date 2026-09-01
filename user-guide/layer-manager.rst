@@ -37,6 +37,22 @@ the grid (left-to-right, top-to-bottom).
 
 .. image:: images/layer-manager-03-grid.png
 
+Layer opacity
+^^^^^^^^^^^^^
+
+The **Opacity** column shows each layer's opacity as a percent. Map Underlay and
+Map Symbology are labeled **Opaque** and cannot be faded.
+
+To change opacity, select one or more overlay layers and use the **Opacity**
+slider or percent field at the bottom of the dialog. 100% is fully opaque; 0%
+hides the layer visually while leaving it enabled.
+
+Opacity applies to radar products, alerts, placefiles, location markers, radar
+range, overlay products, the color table, map overlay text, and radar sites.
+Radar product opacity can also be adjusted from **Radar Opacity** in the Radar
+Toolbox **Map Settings** (see :doc:`radar-toolbox`); both controls edit the same
+Radar layer setting.
+
 Filter
 ^^^^^^
 
@@ -60,8 +76,9 @@ The Layer Manager gives the user not only the ability to hide placefiles, but
 also hide Range Rings, Radar Data, Alerts, Color Table, and the Map Overlay from
 individual grid panes.
 
-Some layers are not adjustable by design, such as the Map Overlay, Color Table,
-Map Symbology, and the Map Underlay.
+Some layers cannot be reordered, including Map Overlay, Color Table, Radar
+Sites, Map Symbology, and Map Underlay. Map style layers (Map Underlay and Map
+Symbology) also cannot have their opacity changed.
 
 Shortcut
 ^^^^^^^^

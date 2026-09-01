@@ -83,6 +83,16 @@ provider's website:
 
 Shortcut: ``s`` or both mouse buttons
 
+Radar Opacity
+^^^^^^^^^^^^^
+
+The **Radar Opacity** slider (and percent field) fades the radar product so the
+map underlay shows through. 100% is fully opaque; lower values make streets,
+satellite imagery, and other map features more visible under the radar.
+
+This control is the same setting as the **Radar** row in :doc:`layer-manager`.
+Map styles (Map Underlay and Map Symbology) stay fully opaque.
+
 Smooth Radar Data
 ^^^^^^^^^^^^^^^^^
 

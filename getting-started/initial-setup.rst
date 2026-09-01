@@ -10,22 +10,37 @@ https://github.com/dpaulat/supercell-wx/releases.
 Windows Setup
 ^^^^^^^^^^^^^
 
-*Minimum requirements: Windows 10 (1809 or later), Windows 11*
+*Minimum requirements:*
 
-**Installer (recommended):** Download ``supercell-wx-v*-windows-x64.exe`` and run
-it. The NSIS bootstrapper quietly installs the Visual C++ Redistributable, then
-installs Supercell Wx via the MSI. You can choose the install folder during
+- *x64: Windows 10 (1809 or later), Windows 11*
+- *ARM64: Windows 11 on Arm (OpenGL 3.3 required)*
+
+Download the package that matches your PC architecture (``x64`` or ``arm64``).
+The ARM64 installer will not run on Intel/AMD PCs, and the x64 installer will
+not run on Arm PCs.
+
+**Installer (recommended):** Download ``supercell-wx-v*-windows-<arch>.exe`` and
+run it. The NSIS bootstrapper quietly installs the Visual C++ Redistributable,
+then installs Supercell Wx via the MSI. You can choose the install folder during
 setup. Afterward, Add/Remove Programs is owned by the MSI (not the ``.exe``).
 
-**MSI:** ``supercell-wx-v*-windows-x64.msi`` is also published for environments
-that require an MSI (including the in-app updater). The MSI does not install the
-Visual C++ Redistributable; use the ``.exe`` installer when that is required.
+The in-app updater on Windows downloads and launches this same ``.exe``
+installer (architecture-matched) so User Account Control elevation works.
+
+**MSI:** ``supercell-wx-v*-windows-<arch>.msi`` is also published for
+environments that require an MSI. The MSI does not install the Visual C++
+Redistributable; use the ``.exe`` installer when that is required.
 
 **Portable zip:** Unzip the application to its own folder, and launch
 supercell-wx.exe from the bin folder. No installation is required. The Microsoft
 Visual C++ Redistributable may still be required if it is not already installed
 on the system
 (https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist).
+
+.. note:: Some Windows on Arm virtual machines do not provide a usable OpenGL
+          3.3 context. If the main window is blank, try running on physical Arm
+          hardware (for example a Snapdragon PC) or disable 3D acceleration in
+          the VM if that option is available.
 
 Linux Setup
 ^^^^^^^^^^^
@@ -34,7 +49,7 @@ Linux Setup
 
 - *x64: Linux/X11 with support for GCC 11 and OpenGL 3.3 (e.g., Fedora 34+,
   Ubuntu 22.04+, EndeavourOS, openSUSE Tumbleweed)*
-- *arm64: Linux/X11 with with support for GCC 11, OpenGL 3.3 and GLIBC 2.38
+- *arm64: Linux/X11 with support for GCC 11, OpenGL 3.3 and GLIBC 2.38
   (e.g., Fedora 39+, Ubuntu 24.04+, EndeavourOS, openSUSE Tumbleweed)*
 
 Flatpak
@@ -258,8 +273,11 @@ Right-click a map pane for **Link view** (more than one pane), **Pop-out**, and
 
 For more information about the displayed radar product, hover over the time in
 the upper right of the map. Hold the ``SHIFT`` key to view radar moment data or
-other derived information underneath the cursor. Hold the ``CTRL`` key to
-display a tick marker on each map pane indicating the current mouse location.
+other derived information underneath the cursor, including range and radar beam
+height. Beam height is labeled **MSL** (mean sea level, the default) or **ARL**
+(above radar level). Change the reference under **File > Settings > Units >
+Radar Beam Height**. Hold the ``CTRL`` key to display a tick marker on each map
+pane indicating the current mouse location.
 
 Customization
 -------------

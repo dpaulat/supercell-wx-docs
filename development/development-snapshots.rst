@@ -52,9 +52,11 @@ Important: Prefer Portable/Binary Artifacts
 -------------------------------------------
 
 For development testing, use the platform binary artifact (for example,
-``supercell-wx-windows-vs2026-x64``) instead of the installer artifact.
+``supercell-wx-windows-vs2026-x64`` or ``supercell-wx-windows-vs2026-arm64``)
+instead of the installer artifact.
 
-The installer artifact (``supercell-wx-installer-windows-vs2026-x64``)
+The installer artifact (``supercell-wx-installer-windows-vs2026-x64`` or
+``supercell-wx-installer-windows-vs2026-arm64``)
 contains both the ``.exe`` NSIS bootstrapper and the ``.msi``. It installs
 over your release version and can replace your stable install.
 
@@ -94,7 +96,8 @@ How to Download a Snapshot
 Windows Snapshot Usage (Portable)
 ---------------------------------
 
-If you download ``supercell-wx-windows-vs2026-x64``:
+If you download ``supercell-wx-windows-vs2026-x64`` (or
+``supercell-wx-windows-vs2026-arm64`` on Windows on Arm):
 
 #. Extract the archive to a folder of your choice.
 #. Open the extracted ``bin`` folder.
@@ -131,6 +134,10 @@ Artifact Name Reference
      - ``supercell-wx-installer-windows-vs2026-x64``
    * - Windows x64 Binaries (recommended for snapshot testing)
      - ``supercell-wx-windows-vs2026-x64``
+   * - Windows ARM64 Installer
+     - ``supercell-wx-installer-windows-vs2026-arm64``
+   * - Windows ARM64 Binaries
+     - ``supercell-wx-windows-vs2026-arm64``
 
 Troubleshooting
 ---------------

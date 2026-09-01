@@ -2,7 +2,8 @@ Settings
 ========
 
 Settings can be accessed from the menu by selecting **File > Settings**. The
-**Settings** menu contains four categories: General, Palettes, Audio, and Text.
+**Settings** dialog contains tabs for General, Palettes, Units, Audio, Text, and
+Hotkeys.
 
 .. image:: images/settings-general-04-restore-defaults.png
 
@@ -329,6 +330,21 @@ selected, radar product units will be determined based on the **Scale**, **Offse
 **Units** fields defined in the color table for each applicable product.
 
 .. image:: images/settings-units-01.png
+
+Radar Beam Height
+^^^^^^^^^^^^^^^^^
+
+The Shift+hover map tooltip includes radar beam height at the cursor. **Radar
+Beam Height** selects the vertical reference:
+
+- **Mean Sea Level** (default) — height above mean sea level, including the
+  radar site elevation. The tooltip suffix is ``MSL``.
+- **Above Radar Level** — height above the radar antenna (mean sea level minus
+  site elevation). The tooltip suffix is ``ARL``. Near the radar this is a small
+  value even at high-elevation sites.
+
+The numeric height uses the **Echo Tops** unit setting. This is not
+above-ground-level (AGL); AGL would require a terrain map.
 
 Audio
 -----

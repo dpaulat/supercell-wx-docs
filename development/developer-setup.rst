@@ -8,7 +8,9 @@ Required Tools
 
   - Windows
 
-    - `Microsoft Visual Studio 2022/2026 <https://visualstudio.microsoft.com/downloads/>`_
+    - `Microsoft Visual Studio 2026 <https://visualstudio.microsoft.com/downloads/>`_
+      (recommended; used in CI). Visual Studio 2022 remains supported via
+      setup scripts and CMake presets.
 
   - Linux
 
@@ -17,7 +19,8 @@ Required Tools
 
   - macOS
 
-    - llvm >= 18 (llvm@18 via homebrew recommended)
+    - llvm >= 18 (``llvm@22`` via Homebrew recommended; ``llvm@23`` is
+      supported). Clang 21 and newer require a macOS 13.3 deployment target.
     - Ninja (ninja via homebrew recommended)
 
 - `CMake >= 4.2.0 <https://cmake.org/download/>`_
@@ -26,8 +29,9 @@ Required Tools
 - `Qt 6.11.1 <https://www.qt.io/download-open-source>`_
 
   - For Microsoft Visual Studio >= 2022, install Qt for **MSVC 2022 64-bit**
+  - For Windows ARM64 cross-compilation, also install Qt for **MSVC 2022 ARM64**
   - For Linux GCC, install Qt for **Desktop gcc 64-bit**
-  - For macOS, install Qt for - For macOS, install Qt for **Desktop**
+  - For macOS, install Qt for **Desktop**
   - Additional libraries
 
     - Qt Image Formats
@@ -46,6 +50,7 @@ Required Tools
 
       $ python3 pip install --upgrade aqtinstall
       $ aqt install-qt windows desktop 6.11.1 win64_msvc2022_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
+      $ aqt install-qt windows desktop 6.11.1 win64_msvc2022_arm64_cross_compiled -m qtimageformats qtmultimedia qtpositioning qtserialport
       $ aqt install-qt linux desktop 6.11.1 linux_gcc_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
       $ aqt install-qt mac desktop 6.11.1 clang_64 -m qtimageformats qtmultimedia qtpositioning qtserialport
 
@@ -159,7 +164,8 @@ Preset, and build the ``supercell-wx`` target.
 .. note::
 
   Visual Studio Code on Windows requires running from the *x64 Native Tools
-  Command Prompt for VS*, or updating your shortcut target (e.g.,
+  Command Prompt for VS* (Visual Studio 2026 or 2022), or updating your
+  shortcut target (e.g.,
   ``%comspec% /k ""C:\Program Files\Microsoft Visual Studio\18\Community\VC\Auxiliary\Build\vcvars64.bat" ^&^& "C:\Users\username\AppData\Local\Programs\Microsoft VS Code\Code.exe""``)
 
 CMake Setup
@@ -205,6 +211,24 @@ Depending on the generator, either:
 - Open the source directory, pointing your editor to the proper build directory
 
 You are ready to build the ``supercell-wx`` target.
+
+Windows ARM64 (cross-compile)
+"""""""""""""""""""""""""""""
+
+Windows ARM64 binaries are built by cross-compiling from an x64 host. Native
+compilation on Arm is not currently supported.
+
+Install both the **MSVC 2022 64-bit** (host tools, including Qt deployment)
+and **MSVC 2022 ARM64** Qt kits, then run an ARM64 setup script, for example:
+
+.. code:: text
+
+  tools\setup-windows-vs2026-arm64-release.bat [BUILD_DIR] [VENV_PATH]
+
+The ARM64 setup scripts set ``vs_platform=ARM64`` and use Conan profile
+``scwx-windows_vs2026_armv8`` with an x64 build profile. Qt is expected at
+``C:\Qt\6.11.1\msvc2022_arm64`` (target) and ``C:\Qt\6.11.1\msvc2022_64``
+(host).
 
 Visual Studio Code
 """"""""""""""""""

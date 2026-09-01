@@ -50,8 +50,7 @@ Will my computer run Supercell Wx?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Minimum requirements:
 
-- Windows 10 (1809 or later)
-- Windows 11
+- Windows 10 (1809 or later) or Windows 11, 64-bit (x64 or ARM64)
 - Linux
   - Arch Linux (EndeavourOS, SteamOS [Steam Deck], and other Arch derivatives)
   - Fedora Linux 34+
@@ -120,10 +119,22 @@ How do I change the default time zone and format?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **File > Settings > Default Clock Mode**
 
+How do I fade radar so the map shows through?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Use **Radar Opacity** in the Radar Toolbox **Map Settings**, or the **Opacity**
+column in **Tools > Layer Manager**. Map styles stay fully opaque. See
+:doc:`../user-guide/radar-toolbox` and :doc:`../user-guide/layer-manager`.
+
 How do I see the specific values in a location?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Hold `SHIFT` and mouse over the location for the value related to the product you
-have selected.
+have selected. The tooltip also shows range from the radar and beam height.
+
+Beam height defaults to mean sea level (**MSL**), which includes the radar site
+elevation. To show height above the antenna instead, set **File > Settings >
+Units > Radar Beam Height** to **Above Radar Level**. The tooltip suffix is
+``MSL`` or ``ARL``. True above-ground-level height is not available (that would
+require a terrain map).
 
 Can I use an alternate radar data source?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
