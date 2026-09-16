@@ -67,6 +67,14 @@ How do I install and set up Supercell Wx?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 https://supercell-wx.readthedocs.io/en/stable/getting-started/initial-setup.html 
 
+Why won't the app start? Windows reports an error about iconv-2.dll (0xc0e90002).
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This is usually caused by a pending Windows update, not a bad install. Repairing
+or reinstalling often does not help until Windows finishes updating. Install any
+pending Windows updates, reboot if prompted, then reopen Supercell Wx.
+
+See `GitHub issue 699 <https://github.com/dpaulat/supercell-wx/issues/699>`_.
+
 Where can I join the discussion? Where do I report a bug?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `Join Discord <https://discord.com/invite/vFMV76brwU>`_
