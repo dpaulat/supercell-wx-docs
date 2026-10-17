@@ -77,9 +77,9 @@ be set directly:
 * ``SCWX_LEVEL2_DATA_PROVIDER_URL`` — Level 2 provider base URL
 * ``SCWX_LEVEL3_DATA_PROVIDER_URL`` — Level 3 provider base URL
 
-When a provider URL contains ``iastate.edu``, ``allisonhouse.com``, or
-``weatherpulse.com``, Supercell Wx also loads an extended radar site list
-appropriate for that provider.
+When a provider URL contains ``allisonhouse.com``, ``iastate.edu``,
+``mrrl.net``, or ``weatherpulse.com``, Supercell Wx also loads an extended radar
+site list appropriate for that provider.
 
 Examples
 --------
@@ -89,6 +89,12 @@ Iowa State Mesonet (Level 2):
 .. code-block:: none
 
    supercell-wx --level2-provider https://mesonet-nexrad.agron.iastate.edu/level2/raw/
+
+Mobile Radar Research Lab (Level 2):
+
+.. code-block:: none
+
+   supercell-wx --level2-provider https://feeds.mrrl.net/polling/
 
 NWS TGFTP (Level 3):
 
