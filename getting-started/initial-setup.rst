@@ -22,7 +22,11 @@ not run on Arm PCs.
 **Installer (recommended):** Download ``supercell-wx-v*-windows-<arch>.exe`` and
 run it. The NSIS bootstrapper quietly installs the Visual C++ Redistributable,
 then installs Supercell Wx via the MSI. You can choose the install folder during
-setup. Afterward, Add/Remove Programs is owned by the MSI (not the ``.exe``).
+setup. An optional components page can add Start Menu shortcuts that launch with
+the Iowa State Mesonet or MRRL Level 2 providers; the default Supercell Wx
+shortcut is always installed. Afterward, Add/Remove Programs is owned by the
+MSI (not the ``.exe``). Silent installs accept ``/NOPROVIDERSHORTCUTS`` to skip
+those extra shortcuts.
 
 The in-app updater on Windows downloads and launches this same ``.exe``
 installer (architecture-matched) so User Account Control elevation works.
